@@ -1,0 +1,41 @@
+C:\Users\1928\Documents\Visual Studio 2015\Projects\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\1928\Documents\Visual Studio 2015\Projects\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\1928\Documents\Visual Studio 2015\Projects\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csprojResolveAssemblyReference.cache
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Form1.resources
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
+C:\Users\User\Downloads\Compressed\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.GenerateResource.Cache
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csprojResolveAssemblyReference.cache
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Form1.resources
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
+C:\Users\User\Downloads\Compressed\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.GenerateResource.Cache
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csprojAssemblyReference.cache
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Form1.resources
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.GenerateResource.cache
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\User\Downloads\Pacman021024\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csprojAssemblyReference.cache
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Form1.resources
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.GenerateResource.cache
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.CoreCompileInputs.cache
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\yeatn\Downloads\AAA\1\Pacman021024_V1\Pacman021024\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb
