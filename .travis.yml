@@ -9,3 +9,5 @@ install:
 script:
  - msbuild /p:Configuration=Debug Pacman.sln
  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TestPacman/bin/Release/TestPacman.dll
+notifications:
+  slack: dp1-world:Ne7BYP3poBC2rygKAs1nhDYX
