@@ -12,4 +12,4 @@ script:
 notifications:
   slack:
     rooms:
-	  - dp1-world:Ne7BYP3poBC2rygKAs1nhDYX#pacman
+    	- dp1-world:Ne7BYP3poBC2rygKAs1nhDYX#pacman
