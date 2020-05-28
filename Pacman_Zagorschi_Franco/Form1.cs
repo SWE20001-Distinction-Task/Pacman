@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Pacman_Zagorschi_Franco
 {
@@ -415,9 +416,182 @@ namespace Pacman_Zagorschi_Franco
             resetall();
         }
 
+        public string ShowDialog(string text, string caption)
+        {
+            Form prompt = new Form()
+            {
+                MinimizeBox = false,
+                MaximizeBox = false,
+                ControlBox = false,
+                Width = 500,
+                Height = 150,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                Text = caption,
+                StartPosition = FormStartPosition.CenterScreen
+            };
+            Label textLabel = new Label() { Left = 50, Top = 20, Text = text };
+            TextBox textBox = new TextBox() { Left = textLabel.Width, Top = 20, Width = 200, MaxLength = 10, Text = Guid.NewGuid().ToString("N").Substring(0, 10) };
+            Button confirmation = new Button() { Text = "Ok", Left = textLabel.Width + textBox.Width, Width = 100, Top = 20, DialogResult = DialogResult.OK };
+            confirmation.Click += (sender, e) => { prompt.Close(); };
+            prompt.Controls.Add(textBox);
+            prompt.Controls.Add(confirmation);
+            prompt.Controls.Add(textLabel);
+            prompt.AcceptButton = confirmation;
+
+            return prompt.ShowDialog() == DialogResult.OK ? name = textBox.Text : "";
+        }
+
+        public string ShowRank()
+        {
+            onetime_status = false;
+            Form prompt = new Form()
+            {
+                MinimizeBox = false,
+                MaximizeBox = false,
+                ControlBox = false,
+                Width = 500,
+                Height = 550,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                StartPosition = FormStartPosition.CenterScreen
+            };
+
+            string fullPath = Directory.GetCurrentDirectory() + "/score.txt";
+            writescore(fullPath, name, mark);
+            string[,] arr = readscore(fullPath);
+            int count = countscorerecord(fullPath);
+
+            int margin = 30;
+
+            Label[] arrrank_label;
+            Label[] arrname_label;
+            Label[] arrscore_label;
+            if (count < 10)
+            {
+                arrrank_label = new Label[10];
+                arrname_label = new Label[10];
+                arrscore_label = new Label[10];
+            }
+            else
+            {
+                arrrank_label = new Label[count];
+                arrname_label = new Label[count];
+                arrscore_label = new Label[count];
+            }
+
+
+            for (int i = 0; i < count; ++i)
+            {
+                if (i < 10)
+                {
+                    arrrank_label[i] = new Label() { TextAlign = ContentAlignment.MiddleCenter, Top = 100 + (i + 1) * margin, Text = (i + 1).ToString() };
+                    arrname_label[i] = new Label() { TextAlign = ContentAlignment.MiddleCenter, Top = 100 + (i + 1) * margin, Text = arr[i, 0] };
+                    arrscore_label[i] = new Label() { TextAlign = ContentAlignment.MiddleCenter, Top = 100 + (i + 1) * margin, Text = arr[i, 1] };
+                    arrrank_label[i].Left = (prompt.Size.Width - arrrank_label[i].Size.Width) / 4;
+                    arrname_label[i].Left = (prompt.Size.Width - arrname_label[i].Size.Width) / 2;
+                    arrscore_label[i].Left = arrname_label[i].Left + (prompt.Size.Width - arrscore_label[i].Size.Width) / 4;
+                    prompt.Controls.Add(arrrank_label[i]);
+                    prompt.Controls.Add(arrname_label[i]);
+                    prompt.Controls.Add(arrscore_label[i]);
+                }
+                else continue;
+            }
+            Label titlelabel = new Label() { Font = new Font("Arial", 50), TextAlign = ContentAlignment.MiddleCenter, Top = 10, Height = 80, Width = prompt.Size.Width, Text = "Rank" };
+            Label rankLabel = new Label() { TextAlign = ContentAlignment.MiddleCenter, Top = 100, Text = "Rank" };
+            Label nameLabel = new Label() { TextAlign = ContentAlignment.MiddleCenter, Top = 100, Text = "Name" };
+            Label scoreLabel = new Label() { TextAlign = ContentAlignment.MiddleCenter, Top = 100, Text = "Score" };
+            titlelabel.Left = (prompt.Size.Width - titlelabel.Size.Width) / 2;
+            rankLabel.Left = (prompt.Size.Width - rankLabel.Size.Width) / 4;
+            nameLabel.Left = (prompt.Size.Width - nameLabel.Size.Width) / 2;
+            scoreLabel.Left = nameLabel.Left + (prompt.Size.Width - scoreLabel.Size.Width) / 4;
+            Button confirmation = new Button() { Text = "OK", Left = nameLabel.Width + rankLabel.Width, Width = 100, Top = 450, DialogResult = DialogResult.OK };
+            prompt.Controls.Add(titlelabel);
+            prompt.Controls.Add(rankLabel);
+            prompt.Controls.Add(nameLabel);
+            prompt.Controls.Add(scoreLabel);
+            prompt.Controls.Add(confirmation);
+            prompt.AcceptButton = confirmation;
+            return prompt.ShowDialog() == DialogResult.OK ? name = "" : "";
+        }
+
+        public void writescore(string path, string playername, int playermark)
+        {
+            if (!File.Exists(path))
+            {
+                using (StreamWriter writer = new StreamWriter(path))
+                {
+                    writer.WriteLine(name + " " + mark);
+                }
+            }
+            else
+            {
+                using (StreamWriter writer = File.AppendText(path))
+                {
+                    writer.WriteLine(name + " " + mark);
+                }
+            }
+        }
+
+        public int countscorerecord(string path)
+        {
+            int count;
+
+            count = File.ReadLines(path).Count();
+
+            return count;
+        }
+
+        public string[,] readscore(string path)
+        {
+            int count = countscorerecord(path);
+
+            string[,] arr = new string[count, 2];
+            int j;
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                count = 0;
+                while ((s = sr.ReadLine()) != null)
+                {
+                    string[] data = s.Split(' ');
+                    j = 0;
+                    foreach (string d in data)
+                    {
+                        arr[count, j] = d;
+                        j += 1;
+                    }
+                    count += 1;
+                }
+            }
+
+            for (int i = 0; i < arr.GetLength(0) - 1; i++)
+            {
+                for (j = i; j < arr.GetLength(0); j++)
+                {
+                    if (int.Parse(arr[i, 1]) < int.Parse(arr[j, 1])) // sort by descending by first index of each row
+                    {
+                        for (int k = 0; k < arr.GetLength(1); k++)
+                        {
+                            var temp = arr[i, k];
+                            arr[i, k] = arr[j, k];
+                            arr[j, k] = temp;
+                        }
+                    }
+                }
+            }
+            return arr;
+        }
+
         //avvio del gioco
         private void button1_Click(object sender, EventArgs e)
         {
+            //CCL
+            onetime_status = true;
+            name = ShowDialog("Name:", "Please Enter Your Name");
+            while (name.Trim() == string.Empty)
+            {
+                name = ShowDialog("Name:", "Please Enter Your Name");
+            }
+            //CCL
             start = true;
             life();
             points();
@@ -953,12 +1127,17 @@ namespace Pacman_Zagorschi_Franco
                 }
             }
             score.Text = point.ToString();
+            mark = point;
             if (point >= 332) { finepartita(); label141.Visible = true; }
         }
 
         //fine partita
         private void finepartita()
         {
+            if (onetime_status == true)
+            {
+                string promptValue = ShowRank();
+            }
             point = 0;
             vita = 3;
             timer1.Enabled = false;
