@@ -1127,17 +1127,19 @@ namespace Pacman_Zagorschi_Franco
                 }
             }
             score.Text = point.ToString();
-            mark = point;
+            mark = point;//CCL
             if (point >= 332) { finepartita(); label141.Visible = true; }
         }
 
         //fine partita
         private void finepartita()
         {
+            //CCL
             if (onetime_status == true)
             {
                 string promptValue = ShowRank();
             }
+            //CCL
             point = 0;
             vita = 3;
             timer1.Enabled = false;
