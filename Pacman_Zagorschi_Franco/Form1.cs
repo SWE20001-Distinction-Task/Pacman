@@ -14,16 +14,18 @@ namespace Pacman_Zagorschi_Franco
     {
 
         //dichiarazione variabili
+        public bool onetime_status;
+        public string name;
         public int leftghost1, leftghost2, leftghost3, leftghost4, left;
         public int topghost1, topghost2, topghost3, topghost4, top;
         public int next, direzione, temp = 1;
         public bool pacturn, ghost1turn, ghost2turn, ghost3turn, ghost4turn, start, ghost1puomangiare, ghost2puomangiare, ghost3puomangiare, ghost4puomangiare, g1mangiato, g2mangiato, g3mangiato, g4mangiato;
         public bool dir1, dir2, dir3, dir4, c, Supermod, Supermod1, Supermod2, Supermod3, Supermod4, v1, v2, v3, v4, tresec = true;
-        public int random1, random2, random3, random4, vita = 3, tic4, tic5, tic6, point;
+        public int random1, random2, random3, random4, vita = 3, tic4, tic5, tic6, point, mark;
 
         private void label254_Click_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
