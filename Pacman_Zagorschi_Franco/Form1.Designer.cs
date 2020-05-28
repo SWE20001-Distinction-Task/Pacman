@@ -1,4 +1,4 @@
-﻿namespace Pacman_Zagorschi_Franco
+namespace Pacman_Zagorschi_Franco
 {
     partial class Form1
     {
@@ -380,10 +380,8 @@
             this.label341 = new System.Windows.Forms.Label();
             this.timer8 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label254 = new System.Windows.Forms.Label();
-            this.label255 = new System.Windows.Forms.Label();
-            this.label253 = new System.Windows.Forms.Label();
-            this.label142 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pacman = new System.Windows.Forms.PictureBox();
@@ -395,9 +393,15 @@
             this.label141 = new System.Windows.Forms.Label();
             this.powermod1 = new System.Windows.Forms.Timer(this.components);
             this.attendo = new System.Windows.Forms.Timer(this.components);
+            this.label254 = new System.Windows.Forms.Label();
+            this.label255 = new System.Windows.Forms.Label();
+            this.label253 = new System.Windows.Forms.Label();
+            this.label142 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacman)).BeginInit();
             this.SuspendLayout();
@@ -3217,6 +3221,8 @@
             this.panel1.Controls.Add(this.label255);
             this.panel1.Controls.Add(this.label253);
             this.panel1.Controls.Add(this.label142);
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3226,41 +3232,38 @@
             this.panel1.TabIndex = 502;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label254
+            // pictureBox5
             // 
-            this.label254.Location = new System.Drawing.Point(0, 0);
-            this.label254.Name = "label254";
-            this.label254.Size = new System.Drawing.Size(100, 23);
-            this.label254.TabIndex = 0;
+            this.pictureBox5.Image = global::Pacman_Zagorschi_Franco.Properties.Resources.bg_name;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 226);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(348, 171);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // label255
+            // pictureBox4
             // 
-            this.label255.Location = new System.Drawing.Point(0, 0);
-            this.label255.Name = "label255";
-            this.label255.Size = new System.Drawing.Size(100, 23);
-            this.label255.TabIndex = 1;
-            // 
-            // label253
-            // 
-            this.label253.Location = new System.Drawing.Point(0, 0);
-            this.label253.Name = "label253";
-            this.label253.Size = new System.Drawing.Size(100, 23);
-            this.label253.TabIndex = 2;
-            // 
-            // label142
-            // 
-            this.label142.Location = new System.Drawing.Point(0, 0);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(100, 23);
-            this.label142.TabIndex = 3;
+            this.pictureBox4.Image = global::Pacman_Zagorschi_Franco.Properties.Resources.exit;
+            this.pictureBox4.Location = new System.Drawing.Point(163, 158);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Image = global::Pacman_Zagorschi_Franco.Properties.Resources.pacman_bg;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 18);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.Size = new System.Drawing.Size(348, 101);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // button1
             // 
@@ -3271,7 +3274,7 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::Pacman_Zagorschi_Franco.Properties.Resources.playgame;
-            this.button1.Location = new System.Drawing.Point(114, 178);
+            this.button1.Location = new System.Drawing.Point(123, 124);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 36);
             this.button1.TabIndex = 0;
@@ -3350,6 +3353,53 @@
             // 
             this.attendo.Interval = 400;
             this.attendo.Tick += new System.EventHandler(this.attendo_Tick);
+            // 
+            // label254
+            // 
+            this.label254.AutoSize = true;
+            this.label254.Font = new System.Drawing.Font("News706 BT", 13.25F, System.Drawing.FontStyle.Bold);
+            this.label254.ForeColor = System.Drawing.Color.White;
+            this.label254.Location = new System.Drawing.Point(128, 354);
+            this.label254.Name = "label254";
+            this.label254.Size = new System.Drawing.Size(122, 20);
+            this.label254.TabIndex = 11;
+            this.label254.Text = "4. Jasmin(101215779)";
+            this.label254.Click += new System.EventHandler(this.label254_Click_1);
+            // 
+            // label255
+            // 
+            this.label255.AutoSize = true;
+            this.label255.Font = new System.Drawing.Font("News706 BT", 13.25F, System.Drawing.FontStyle.Bold);
+            this.label255.ForeColor = System.Drawing.Color.White;
+            this.label255.Location = new System.Drawing.Point(97, 331);
+            this.label255.Name = "label255";
+            this.label255.Size = new System.Drawing.Size(197, 21);
+            this.label255.TabIndex = 10;
+            this.label255.Text = "3. Elaine(101216455)";
+            // 
+            // label253
+            // 
+            this.label253.AutoSize = true;
+            this.label253.Font = new System.Drawing.Font("News706 BT", 13.25F, System.Drawing.FontStyle.Bold);
+            this.label253.ForeColor = System.Drawing.Color.White;
+            this.label253.Location = new System.Drawing.Point(126, 277);
+            this.label253.Name = "label253";
+            this.label253.Size = new System.Drawing.Size(122, 20);
+            this.label253.TabIndex = 9;
+            this.label253.Text = "1. Yeat(100078269)";
+            // 
+            // label142
+            // 
+            this.label142.AutoSize = true;
+            this.label142.BackColor = System.Drawing.Color.Transparent;
+            this.label142.Font = new System.Drawing.Font("News706 BT", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label142.ForeColor = System.Drawing.SystemColors.Window;
+            this.label142.Location = new System.Drawing.Point(53, 255);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(266, 20);
+            this.label142.TabIndex = 8;
+            this.label142.Text = "2.Chung Long(101227936)";
+            
             // 
             // Form1
             // 
@@ -3723,6 +3773,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacman)).EndInit();
             this.ResumeLayout(false);
@@ -4092,8 +4145,8 @@
         private System.Windows.Forms.Label label141;
         private System.Windows.Forms.Timer powermod1;
         private System.Windows.Forms.Timer attendo;
-
-
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label254;
         private System.Windows.Forms.Label label255;
         private System.Windows.Forms.Label label253;
