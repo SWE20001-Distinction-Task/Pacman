@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Text;
 using System.Collections.Generic;
@@ -12,6 +12,7 @@ namespace Pacman_Zagorschi_Franco
 {
     public partial class Form1 : Form
     {
+
         //dichiarazione variabili
         public int leftghost1, leftghost2, leftghost3, leftghost4, left;
         public int topghost1, topghost2, topghost3, topghost4, top;
@@ -42,7 +43,10 @@ namespace Pacman_Zagorschi_Franco
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            //JASMINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = "mainmenu1.wav";
+            player.Play();
         }
 
         private void label142_Click(object sender, EventArgs e)
@@ -402,10 +406,10 @@ namespace Pacman_Zagorschi_Franco
             oggetti.Add(label340);
             oggetti.Add(label341);
             //Start without Pnale
-            start = true;
+            start = false;
             life();
             points();
-            panel1.Visible = false;
+            panel1.Visible = true;
             resetall();
         }
 
@@ -417,6 +421,10 @@ namespace Pacman_Zagorschi_Franco
             points();
             panel1.Visible = false;
             resetall();
+            //JASMINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = "mainmenu.wav";
+            player.Play();
         }
 
         //input
