@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace TestPacman
@@ -6,16 +8,44 @@ namespace TestPacman
     [TestFixture]
     public class UnitTest1
     {
-        [Test]
-        public void TestDefault()
+        //[Test]
+        //public void TestDefault()
+        //{
+        //    Assert.Pass();
+        //}
+        //[Test]
+        //public void TestAssignment()
+        //{
+        //    int i = 2;
+        //    Assert.AreEqual(i, 2);
+        //}
+        [Test]//CCL
+        public void TestWriteFile()
         {
-            Assert.Pass();
+            Pacman_Zagorschi_Franco.Form1 testform1 = new Pacman_Zagorschi_Franco.Form1();
+            string fullPath = Directory.GetCurrentDirectory() + "/testscore.txt";
+            testform1.writescore(fullPath, "Testing", 100);
+            Assert.IsTrue(File.Exists(fullPath));
+            File.Delete(fullPath);
         }
-        [Test]
-        public void TestAssignment()
+        [Test]//CCL
+        public void TestCheckFileExist()
         {
-            int i = 2;
-            Assert.AreEqual(i, 2);
+            Pacman_Zagorschi_Franco.Form1 testform1 = new Pacman_Zagorschi_Franco.Form1();
+            string fullPath = Directory.GetCurrentDirectory() + "/testscore.txt";
+            testform1.writescore(fullPath, "Testing", 100);
+            testform1.writescore(fullPath, "Testing1", 200);
+            Assert.IsTrue(File.Exists(fullPath));
+            File.Delete(fullPath);
+        }
+        [Test]//CCL
+        public void TestCountRecord()
+        {
+            Pacman_Zagorschi_Franco.Form1 testform1 = new Pacman_Zagorschi_Franco.Form1();
+            string fullPath = Directory.GetCurrentDirectory() + "/testscore.txt";
+            testform1.writescore(fullPath, "Testing", 100);
+            Assert.AreEqual(testform1.countscorerecord(fullPath), 1);
+            File.Delete(fullPath);
         }
     }
 }
