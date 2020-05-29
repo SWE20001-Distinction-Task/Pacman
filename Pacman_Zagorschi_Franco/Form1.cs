@@ -23,7 +23,7 @@ namespace Pacman_Zagorschi_Franco
         public bool pacturn, ghost1turn, ghost2turn, ghost3turn, ghost4turn, start, ghost1puomangiare, ghost2puomangiare, ghost3puomangiare, ghost4puomangiare, g1mangiato, g2mangiato, g3mangiato, g4mangiato;
         public bool dir1, dir2, dir3, dir4, c, Supermod, Supermod1, Supermod2, Supermod3, Supermod4, v1, v2, v3, v4, tresec = true;
         public int random1, random2, random3, random4, vita = 3, tic4, tic5, tic6, point, mark;
-        public bool cheatGameSpeed = false;
+        public bool cheatGameSpeed = false,cheatInfiniteLife=false;
         private void label254_Click_1(object sender, EventArgs e)
         {
             
@@ -628,10 +628,16 @@ namespace Pacman_Zagorschi_Franco
                 //SPEEDGOD makes the game faster
                 if (cheatCode == "SPEEDGOD")
                     cheatGameSpeed = true;
+                //GODMODE makes the pacman never decrease in current number of life
+                //In another word it means infinite life
+                else if (cheatCode == "GODMODE")
+                    cheatInfiniteLife = true;
                 //REALGAME cancel the cheat code
                 else if (cheatCode == "REALGAME")
+                {
                     cheatGameSpeed = false;
-
+                    cheatInfiniteLife = false;
+                }
                 //Change the game speed according to cheat code
                 if (cheatGameSpeed == true)
                     timer1.Interval = 1;
@@ -813,7 +819,9 @@ namespace Pacman_Zagorschi_Franco
             ghost2velocity = 2;
             ghost3velocity = 2;
             ghost4velocity = 2;
-            vita--;
+            //If the cheatInfiniteLife is enabled, the pacman never decrease its life
+            if(cheatInfiniteLife==false)
+                vita--;
             life();
             prec1 = 0;
             prec2 = 0;
@@ -1114,7 +1122,8 @@ namespace Pacman_Zagorschi_Franco
         private void mangiato()
         {
             pacman.Image = Properties.Resources.pacmorto;
-            if (vita - 1 <= 0)
+            //Only when the GODMODE was disabled, the player will game over when life decreased to 0
+            if (vita - 1 <= 0 && cheatInfiniteLife==false)
             {
                 label124.Visible = true;
                 finepartita();
