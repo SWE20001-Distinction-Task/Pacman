@@ -1,8 +1,5 @@
 ﻿using System;
-using System.IO;
-using System.Collections.Generic;
 using NUnit.Framework;
-using System.Reflection;
 
 namespace TestPacman
 {
@@ -10,17 +7,17 @@ namespace TestPacman
     [TestFixture]
     public class UnitTest1
     {
-        //[Test]
-        //public void TestDefault()
-        //{
-        //    Assert.Pass();
-        //}
-        //[Test]
-        //public void TestAssignment()
-        //{
-        //    int i = 2;
-        //    Assert.AreEqual(i, 2);
-        //}
+        [Test]
+        public void TestDefault()
+        {
+            Assert.Pass();
+        }
+        [Test]
+        public void TestAssignment()
+        {
+            int i = 2;
+            Assert.AreEqual(i, 2);
+        }
         [Test]//CCL
         public void TestSupermod()
         {
