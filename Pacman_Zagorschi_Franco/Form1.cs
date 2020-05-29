@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
+using Microsoft.VisualBasic;
 namespace Pacman_Zagorschi_Franco
 {
     public partial class Form1 : Form
@@ -616,7 +616,15 @@ namespace Pacman_Zagorschi_Franco
                     ghost4.Enabled = true;
                 }
             }
-            
+            if(e.KeyCode==Keys.C)
+            {
+                string cheatCode = Microsoft.VisualBasic.Interaction.InputBox("Insert Cheat Code to have a different game experience",
+                       "CHEAT CODE",
+                       "cheat code insert here",
+                       0,
+                       0);
+                
+            }
             temp = next;
         }
 
