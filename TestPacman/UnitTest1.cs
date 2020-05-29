@@ -19,11 +19,16 @@ namespace TestPacman
             Assert.AreEqual(i, 2);
         }
         [Test]//CCL
-        public void TestSupermod()
+        public void TestSort()
         {
             Pacman_Zagorschi_Franco.Form1 testform1 = new Pacman_Zagorschi_Franco.Form1();
-            testform1.supermod2();
-            Assert.AreEqual(testform1.Supermod, true);
+            string[,] scores = new string[2, 2];
+            scores[0, 0] = "Testing";
+            scores[0, 1] = "100";
+            scores[1, 0] = "Testing1";
+            scores[1, 1] = "200";
+            string[,] sort_scores = testform1.sortscore(scores);
+            Assert.AreEqual(sort_scores[1, 1], "100");
         }
     }
 }

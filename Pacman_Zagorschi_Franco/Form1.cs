@@ -562,23 +562,27 @@ namespace Pacman_Zagorschi_Franco
                     count += 1;
                 }
             }
+            return sortscore(arr);
+        }
 
-            for (int i = 0; i < arr.GetLength(0) - 1; i++)
+        public string[,] sortscore(string[,] scores)
+        {
+            for (int i = 0; i < scores.GetLength(0) - 1; i++)
             {
-                for (j = i; j < arr.GetLength(0); j++)
+                for (int j = i; j < scores.GetLength(0); j++)
                 {
-                    if (int.Parse(arr[i, 1]) < int.Parse(arr[j, 1])) // sort by descending by first index of each row
+                    if (int.Parse(scores[i, 1]) < int.Parse(scores[j, 1])) // sort by descending by first index of each row
                     {
-                        for (int k = 0; k < arr.GetLength(1); k++)
+                        for (int k = 0; k < scores.GetLength(1); k++)
                         {
-                            var temp = arr[i, k];
-                            arr[i, k] = arr[j, k];
-                            arr[j, k] = temp;
+                            var temp = scores[i, k];
+                            scores[i, k] = scores[j, k];
+                            scores[j, k] = temp;
                         }
                     }
                 }
             }
-            return arr;
+            return scores;
         }
 
         //avvio del gioco
