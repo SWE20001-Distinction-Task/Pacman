@@ -595,6 +595,28 @@ namespace Pacman_Zagorschi_Franco
             if (e.KeyCode == Keys.Up) next = 3;
             if (e.KeyCode == Keys.Down) next = 4;
             if (e.KeyCode == Keys.Escape) Close();
+            //Add pause key to P key
+            if(e.KeyCode==Keys.P)
+            {
+                if (pacman.Enabled == true)
+                {
+                    pacman.Enabled = false;
+                    ghost1.Enabled = false;
+                    ghost2.Enabled = false;
+                    ghost3.Enabled = false;
+                    ghost4.Enabled = false;
+                   
+                }
+                else
+                {
+                    pacman.Enabled = true;
+                    ghost1.Enabled = true;
+                    ghost2.Enabled = true;
+                    ghost3.Enabled = true;
+                    ghost4.Enabled = true;
+                }
+            }
+            
             temp = next;
         }
 

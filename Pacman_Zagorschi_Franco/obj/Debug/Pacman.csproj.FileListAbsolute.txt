@@ -48,3 +48,13 @@ C:\Users\CCL\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Pr
 C:\Users\CCL\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.GenerateResource.cache
 C:\Users\CCL\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
 C:\Users\CCL\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csprojAssemblyReference.cache
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Form1.resources
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.GenerateResource.cache
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.CoreCompileInputs.cache
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\yeatn\Documents\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb
