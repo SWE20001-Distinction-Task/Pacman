@@ -23,7 +23,7 @@ namespace Pacman_Zagorschi_Franco
         public bool pacturn, ghost1turn, ghost2turn, ghost3turn, ghost4turn, start, ghost1puomangiare, ghost2puomangiare, ghost3puomangiare, ghost4puomangiare, g1mangiato, g2mangiato, g3mangiato, g4mangiato;
         public bool dir1, dir2, dir3, dir4, c, Supermod, Supermod1, Supermod2, Supermod3, Supermod4, v1, v2, v3, v4, tresec = true;
         public int random1, random2, random3, random4, vita = 3, tic4, tic5, tic6, point, mark;
-
+        public bool cheatGameSpeed = false;
         private void label254_Click_1(object sender, EventArgs e)
         {
             
@@ -616,14 +616,28 @@ namespace Pacman_Zagorschi_Franco
                     ghost4.Enabled = true;
                 }
             }
+            //Press key C to enter the cheat code
             if(e.KeyCode==Keys.C)
             {
+                
                 string cheatCode = Microsoft.VisualBasic.Interaction.InputBox("Insert Cheat Code to have a different game experience",
                        "CHEAT CODE",
                        "cheat code insert here",
                        0,
                        0);
-                
+                //SPEEDGOD makes the game faster
+                if (cheatCode == "SPEEDGOD")
+                    cheatGameSpeed = true;
+                //REALGAME cancel the cheat code
+                else if (cheatCode == "REALGAME")
+                    cheatGameSpeed = false;
+
+                //Change the game speed according to cheat code
+                if (cheatGameSpeed == true)
+                    timer1.Interval = 1;
+                else
+                    timer1.Interval = 16;
+
             }
             temp = next;
         }
@@ -643,15 +657,16 @@ namespace Pacman_Zagorschi_Franco
         //timer1
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (pacman.Enabled)
+            
+             if (pacman.Enabled)
             {
                 direction();
                 freedirection();
             }
-            if (ghost1.Enabled || ghost2.Enabled || ghost3.Enabled || ghost4.Enabled)
+             if (ghost1.Enabled || ghost2.Enabled || ghost3.Enabled || ghost4.Enabled)
             {
-                ghost();
-            }
+                 ghost();
+            }        
             if (c) control();
             supermod();
             points();
