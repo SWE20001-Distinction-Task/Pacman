@@ -543,7 +543,7 @@ namespace Pacman_Zagorschi_Franco
         public string[,] readscore(string path)
         {
             int count = countscorerecord(path);
-
+            Sort sort = new Sort();
             string[,] arr = new string[count, 2];
             int j;
             using (StreamReader sr = File.OpenText(path))
@@ -562,27 +562,7 @@ namespace Pacman_Zagorschi_Franco
                     count += 1;
                 }
             }
-            return sortscore(arr);
-        }
-
-        public string[,] sortscore(string[,] scores)
-        {
-            for (int i = 0; i < scores.GetLength(0) - 1; i++)
-            {
-                for (int j = i; j < scores.GetLength(0); j++)
-                {
-                    if (int.Parse(scores[i, 1]) < int.Parse(scores[j, 1])) // sort by descending by first index of each row
-                    {
-                        for (int k = 0; k < scores.GetLength(1); k++)
-                        {
-                            var temp = scores[i, k];
-                            scores[i, k] = scores[j, k];
-                            scores[j, k] = temp;
-                        }
-                    }
-                }
-            }
-            return scores;
+            return sort.sortscore(arr);
         }
 
         //avvio del gioco

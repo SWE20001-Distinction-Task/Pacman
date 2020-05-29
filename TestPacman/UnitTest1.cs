@@ -1,5 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
+using Pacman_Zagorschi_Franco;
 
 namespace TestPacman
 {
@@ -21,13 +22,13 @@ namespace TestPacman
         [Test]//CCL
         public void TestSort()
         {
-            Pacman_Zagorschi_Franco.Form1 testform1 = new Pacman_Zagorschi_Franco.Form1();
+            Sort sort = new Sort();
             string[,] scores = new string[2, 2];
             scores[0, 0] = "Testing";
             scores[0, 1] = "100";
             scores[1, 0] = "Testing1";
             scores[1, 1] = "200";
-            string[,] sort_scores = testform1.sortscore(scores);
+            string[,] sort_scores = sort.sortscore(scores);
             Assert.AreEqual(sort_scores[1, 1], "100");
         }
     }
