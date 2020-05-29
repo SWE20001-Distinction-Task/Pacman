@@ -8,6 +8,8 @@ namespace Pacman_Zagorschi_Franco
 {
     public class Sort
     {
+        //CCL
+        //sort the ranking of player score
         public string[,] sortscore(string[,] scores)
         {
             for (int i = 0; i < scores.GetLength(0) - 1; i++)
