@@ -22,32 +22,11 @@ namespace TestPacman
         //    Assert.AreEqual(i, 2);
         //}
         [Test]//CCL
-        public void TestWriteFile()
+        public void TestSupermod()
         {
             Pacman_Zagorschi_Franco.Form1 testform1 = new Pacman_Zagorschi_Franco.Form1();
-            var fullPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/testscore.txt";
-            testform1.writescore(fullPath, "Testing", 100);
-            Assert.IsTrue(File.Exists(fullPath));
-            File.Delete(fullPath);
-        }
-        [Test]//CCL
-        public void TestCheckFileExist()
-        {
-            Pacman_Zagorschi_Franco.Form1 testform1 = new Pacman_Zagorschi_Franco.Form1();
-            var fullPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/testscore.txt";
-            testform1.writescore(fullPath, "Testing", 100);
-            testform1.writescore(fullPath, "Testing1", 200);
-            Assert.IsTrue(File.Exists(fullPath));
-            File.Delete(fullPath);
-        }
-        [Test]//CCL
-        public void TestCountRecord()
-        {
-            Pacman_Zagorschi_Franco.Form1 testform1 = new Pacman_Zagorschi_Franco.Form1();
-            var fullPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/testscore.txt";
-            testform1.writescore(fullPath, "Testing", 100);
-            Assert.AreEqual(testform1.countscorerecord(fullPath), 1);
-            File.Delete(fullPath);
+            testform1.supermod2();
+            Assert.AreEqual(testform1.Supermod, true);
         }
     }
 }

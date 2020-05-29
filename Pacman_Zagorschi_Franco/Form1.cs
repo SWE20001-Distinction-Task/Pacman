@@ -974,7 +974,7 @@ namespace Pacman_Zagorschi_Franco
             if (pacman.Bounds.IntersectsWith(label220.Bounds) && label220.Visible == true) supermod2();
             if (pacman.Bounds.IntersectsWith(label71.Bounds) && label71.Visible == true) supermod2();
         }
-        private void supermod2()
+        public void supermod2()
         {
             if (!g1mangiato)
             {
