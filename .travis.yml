@@ -3,6 +3,9 @@ solution: Pacman.sln
 mono:
 - latest
 
+dist: xenial
+services:
+  - xvfb
 install:
  - nuget restore Pacman.sln
  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
