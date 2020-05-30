@@ -23,10 +23,10 @@ namespace Pacman_Zagorschi_Franco
         public bool pacturn, ghost1turn, ghost2turn, ghost3turn, ghost4turn, start, ghost1puomangiare, ghost2puomangiare, ghost3puomangiare, ghost4puomangiare, g1mangiato, g2mangiato, g3mangiato, g4mangiato;
         public bool dir1, dir2, dir3, dir4, c, Supermod, Supermod1, Supermod2, Supermod3, Supermod4, v1, v2, v3, v4, tresec = true;
         public int random1, random2, random3, random4, vita = 3, tic4, tic5, tic6, point, mark;
-        public bool cheatGameSpeed = false,cheatInfiniteLife=false;
+        public bool cheatGameSpeed = false, cheatInfiniteLife = false;
         private void label254_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -596,7 +596,7 @@ namespace Pacman_Zagorschi_Franco
             if (e.KeyCode == Keys.Down) next = 4;
             if (e.KeyCode == Keys.Escape) Close();
             //Add pause key to P key
-            if(e.KeyCode==Keys.P)
+            if (e.KeyCode == Keys.P)
             {
                 if (pacman.Enabled == true)
                 {
@@ -605,7 +605,7 @@ namespace Pacman_Zagorschi_Franco
                     ghost2.Enabled = false;
                     ghost3.Enabled = false;
                     ghost4.Enabled = false;
-                   
+
                 }
                 else
                 {
@@ -617,9 +617,9 @@ namespace Pacman_Zagorschi_Franco
                 }
             }
             //Press key C to enter the cheat code
-            if(e.KeyCode==Keys.C)
+            if (e.KeyCode == Keys.C)
             {
-                
+
                 string cheatCode = Microsoft.VisualBasic.Interaction.InputBox("Insert Cheat Code to have a different game experience",
                        "CHEAT CODE",
                        "cheat code insert here",
@@ -663,16 +663,16 @@ namespace Pacman_Zagorschi_Franco
         //timer1
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
-             if (pacman.Enabled)
+
+            if (pacman.Enabled)
             {
                 direction();
                 freedirection();
             }
-             if (ghost1.Enabled || ghost2.Enabled || ghost3.Enabled || ghost4.Enabled)
+            if (ghost1.Enabled || ghost2.Enabled || ghost3.Enabled || ghost4.Enabled)
             {
-                 ghost();
-            }        
+                ghost();
+            }
             if (c) control();
             supermod();
             points();
@@ -783,7 +783,7 @@ namespace Pacman_Zagorschi_Franco
             if (prec4 == 1 && !g4mangiato) { if (ghost4.Left % 2 == 0) leftghost4 = ghost4velocity; ghost4.Image = Properties.Resources.gdx; }
             if (prec4 == 2 && !g4mangiato) { if (ghost4.Left % 2 == 0) leftghost4 = -ghost4velocity; ghost4.Image = Properties.Resources.gsx; }
             if (prec4 == 3 && !g4mangiato) { if (ghost4.Top % 2 == 0) topghost4 = -ghost4velocity; ghost4.Image = Properties.Resources.gup; }
-            if (prec4 == 4&& !g4mangiato) { if (ghost4.Top % 2 == 0) topghost4 = ghost4velocity; ghost1.Image = Properties.Resources.gdown; }
+            if (prec4 == 4 && !g4mangiato) { if (ghost4.Top % 2 == 0) topghost4 = ghost4velocity; ghost1.Image = Properties.Resources.gdown; }
         }
 
         //timer8
@@ -820,7 +820,7 @@ namespace Pacman_Zagorschi_Franco
             ghost3velocity = 2;
             ghost4velocity = 2;
             //If the cheatInfiniteLife is enabled, the pacman never decrease its life
-            if(cheatInfiniteLife==false)
+            if (cheatInfiniteLife == false)
                 vita--;
             life();
             prec1 = 0;
@@ -986,22 +986,31 @@ namespace Pacman_Zagorschi_Franco
         }
 
         // controllo delle vite
-        private void life()
+        public void life()
         {
+            if (vita == 4)
+            {
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = true;
+                pictureBox11.Visible = true;
+            }
             if (vita == 3)
             {
                 pictureBox1.Visible = true;
                 pictureBox2.Visible = true;
+                pictureBox11.Visible = false;
             }
             if (vita == 2)
             {
                 pictureBox1.Visible = true;
                 pictureBox2.Visible = false;
+                pictureBox11.Visible = false;
             }
             if (vita == 1)
             {
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
+                pictureBox11.Visible = false;
             }
         }
         private void supermod()
@@ -1069,7 +1078,7 @@ namespace Pacman_Zagorschi_Franco
                 if (pacman.Bounds.IntersectsWith(ghost4.Bounds) && !Supermod4) mangiato();
                 if (Supermod)
                 {
-                    if (pacman.Bounds.IntersectsWith(ghost1.Bounds) && !Supermod1) mangiato(); 
+                    if (pacman.Bounds.IntersectsWith(ghost1.Bounds) && !Supermod1) mangiato();
                     if (pacman.Bounds.IntersectsWith(ghost2.Bounds) && !Supermod2) mangiato();
                     if (pacman.Bounds.IntersectsWith(ghost3.Bounds) && !Supermod3) mangiato();
                     if (pacman.Bounds.IntersectsWith(ghost4.Bounds) && !Supermod4) mangiato();
@@ -1123,7 +1132,7 @@ namespace Pacman_Zagorschi_Franco
         {
             pacman.Image = Properties.Resources.pacmorto;
             //Only when the GODMODE was disabled, the player will game over when life decreased to 0
-            if (vita - 1 <= 0 && cheatInfiniteLife==false)
+            if (vita - 1 <= 0 && cheatInfiniteLife == false)
             {
                 label124.Visible = true;
                 finepartita();
@@ -1162,6 +1171,14 @@ namespace Pacman_Zagorschi_Franco
                 {
                     point += 1;
                     ((Label)oggetti[i]).Visible = false;
+                    if (i == 19 || i == 276)
+                    {
+                        if (vita < 4)
+                        {
+                            vita += 1;
+                        }
+                        life();
+                    }
                 }
             }
             score.Text = point.ToString();
@@ -1258,10 +1275,10 @@ namespace Pacman_Zagorschi_Franco
                 while (!dir1)
                 {
                     random1 = rand.Next(1, 5);
-                    if (random1 == 1 && !dir1 && random1 != prec1) if (i == 1) { leftghost1 = -ghost1velocity; dir1 = true; if (!Supermod1 && ghost1puomangiare) ghost1.Image = Properties.Resources.rsx; else if (!tresec || g1mangiato) { if (!tresec) ghost1.Image = Properties.Resources.crazy; if(g1mangiato) ghost1.Image = Properties.Resources.msx; } else ghost1.Image = Properties.Resources.tempo; }
+                    if (random1 == 1 && !dir1 && random1 != prec1) if (i == 1) { leftghost1 = -ghost1velocity; dir1 = true; if (!Supermod1 && ghost1puomangiare) ghost1.Image = Properties.Resources.rsx; else if (!tresec || g1mangiato) { if (!tresec) ghost1.Image = Properties.Resources.crazy; if (g1mangiato) ghost1.Image = Properties.Resources.msx; } else ghost1.Image = Properties.Resources.tempo; }
                     if (random1 == 2 && !dir1 && random1 != prec1) if (y == 1) { leftghost1 = ghost1velocity; dir1 = true; if (!Supermod1 && ghost1puomangiare) ghost1.Image = Properties.Resources.rdx; else if (!tresec || g1mangiato) { if (!tresec) ghost1.Image = Properties.Resources.crazy; if (g1mangiato) ghost1.Image = Properties.Resources.mdx; } else ghost1.Image = Properties.Resources.tempo; }
                     if (random1 == 3 && !dir1 && random1 != prec1) if (m == 1) { topghost1 = ghost1velocity; dir1 = true; if (!Supermod1 && ghost1puomangiare) ghost1.Image = Properties.Resources.rdown; else if (!tresec || g1mangiato) { if (!tresec) ghost1.Image = Properties.Resources.crazy; if (g1mangiato) ghost1.Image = Properties.Resources.mdown; } else ghost1.Image = Properties.Resources.tempo; }
-                    if (random1 == 4 && !dir1 && random1 != prec1) if (n == 1) { topghost1 = -ghost1velocity; dir1 = true; if (!Supermod1 && ghost1puomangiare ) ghost1.Image = Properties.Resources.rup; else if (!tresec || g1mangiato) { if (!tresec) ghost1.Image = Properties.Resources.crazy; if (g1mangiato) ghost1.Image = Properties.Resources.mup1; } else ghost1.Image = Properties.Resources.tempo; }
+                    if (random1 == 4 && !dir1 && random1 != prec1) if (n == 1) { topghost1 = -ghost1velocity; dir1 = true; if (!Supermod1 && ghost1puomangiare) ghost1.Image = Properties.Resources.rup; else if (!tresec || g1mangiato) { if (!tresec) ghost1.Image = Properties.Resources.crazy; if (g1mangiato) ghost1.Image = Properties.Resources.mup1; } else ghost1.Image = Properties.Resources.tempo; }
                 }
                 if (random1 == 1) prec1 = 2;
                 if (random1 == 2) prec1 = 1;
@@ -1288,10 +1305,10 @@ namespace Pacman_Zagorschi_Franco
                 while (!dir2)
                 {
                     random2 = rand.Next(1, 5);
-                    if (random2 == 1 && !dir2 && random2 != prec2) if (i == 1) { leftghost2 = -ghost2velocity; dir2 = true; if (!Supermod2 && ghost2puomangiare ) ghost2.Image = Properties.Resources.asx; else if(!tresec || g2mangiato) { if (!tresec) ghost2.Image = Properties.Resources.crazy; if (g2mangiato) ghost2.Image = Properties.Resources.msx; } else ghost2.Image = Properties.Resources.tempo; }
-                    if (random2 == 2 && !dir2 && random2 != prec2) if (y == 1) { leftghost2 = ghost2velocity; dir2 = true; if (!Supermod2 && ghost2puomangiare ) ghost2.Image = Properties.Resources.adx; else if (!tresec || g2mangiato) { if (!tresec) ghost2.Image = Properties.Resources.crazy; if (g2mangiato) ghost2.Image = Properties.Resources.mdx; } else ghost2.Image = Properties.Resources.tempo; }
-                    if (random2 == 3 && !dir2 && random2 != prec2) if (m == 1) { topghost2 = ghost2velocity; dir2 = true; if (!Supermod2 && ghost2puomangiare ) ghost2.Image = Properties.Resources.adown; else if (!tresec || g2mangiato) { if (!tresec) ghost2.Image = Properties.Resources.crazy; if (g2mangiato) ghost2.Image = Properties.Resources.mdown; } else ghost2.Image = Properties.Resources.tempo; }
-                    if (random2 == 4 && !dir2 && random2 != prec2) if (n == 1) { topghost2 = -ghost2velocity; dir2 = true; if (!Supermod2 && ghost2puomangiare ) ghost2.Image = Properties.Resources.aup; else if (!tresec || g2mangiato) { if (!tresec) ghost2.Image = Properties.Resources.crazy; if (g2mangiato) ghost2.Image = Properties.Resources.mup1; } else ghost2.Image = Properties.Resources.tempo; }
+                    if (random2 == 1 && !dir2 && random2 != prec2) if (i == 1) { leftghost2 = -ghost2velocity; dir2 = true; if (!Supermod2 && ghost2puomangiare) ghost2.Image = Properties.Resources.asx; else if (!tresec || g2mangiato) { if (!tresec) ghost2.Image = Properties.Resources.crazy; if (g2mangiato) ghost2.Image = Properties.Resources.msx; } else ghost2.Image = Properties.Resources.tempo; }
+                    if (random2 == 2 && !dir2 && random2 != prec2) if (y == 1) { leftghost2 = ghost2velocity; dir2 = true; if (!Supermod2 && ghost2puomangiare) ghost2.Image = Properties.Resources.adx; else if (!tresec || g2mangiato) { if (!tresec) ghost2.Image = Properties.Resources.crazy; if (g2mangiato) ghost2.Image = Properties.Resources.mdx; } else ghost2.Image = Properties.Resources.tempo; }
+                    if (random2 == 3 && !dir2 && random2 != prec2) if (m == 1) { topghost2 = ghost2velocity; dir2 = true; if (!Supermod2 && ghost2puomangiare) ghost2.Image = Properties.Resources.adown; else if (!tresec || g2mangiato) { if (!tresec) ghost2.Image = Properties.Resources.crazy; if (g2mangiato) ghost2.Image = Properties.Resources.mdown; } else ghost2.Image = Properties.Resources.tempo; }
+                    if (random2 == 4 && !dir2 && random2 != prec2) if (n == 1) { topghost2 = -ghost2velocity; dir2 = true; if (!Supermod2 && ghost2puomangiare) ghost2.Image = Properties.Resources.aup; else if (!tresec || g2mangiato) { if (!tresec) ghost2.Image = Properties.Resources.crazy; if (g2mangiato) ghost2.Image = Properties.Resources.mup1; } else ghost2.Image = Properties.Resources.tempo; }
                 }
                 if (random2 == 1) prec2 = 2;
                 if (random2 == 2) prec2 = 1;
@@ -1320,7 +1337,7 @@ namespace Pacman_Zagorschi_Franco
                     random3 = rand.Next(1, 5);
                     if (random3 == 1 && !dir3 && random3 != prec3) if (i == 1) { leftghost3 = -ghost3velocity; dir3 = true; if (!Supermod3 && ghost3puomangiare) ghost3.Image = Properties.Resources.vsx; else if (!tresec || g3mangiato) { if (!tresec) ghost3.Image = Properties.Resources.crazy; if (g3mangiato) ghost3.Image = Properties.Resources.msx; } else ghost3.Image = Properties.Resources.tempo; }
                     if (random3 == 2 && !dir3 && random3 != prec3) if (y == 1) { leftghost3 = ghost3velocity; dir3 = true; if (!Supermod3 && ghost3puomangiare) ghost3.Image = Properties.Resources.vdx; else if (!tresec || g3mangiato) { if (!tresec) ghost3.Image = Properties.Resources.crazy; if (g3mangiato) ghost3.Image = Properties.Resources.mdx; } else ghost3.Image = Properties.Resources.tempo; }
-                    if (random3 == 3 && !dir3 && random3 != prec3) if (m == 1) { topghost3 = ghost3velocity; dir3 = true; if (!Supermod3 && ghost3puomangiare) ghost3.Image = Properties.Resources.vdown; else if(!tresec || g3mangiato) { if (!tresec) ghost3.Image = Properties.Resources.crazy; if (g3mangiato) ghost3.Image = Properties.Resources.mdown; } else ghost3.Image = Properties.Resources.tempo; }
+                    if (random3 == 3 && !dir3 && random3 != prec3) if (m == 1) { topghost3 = ghost3velocity; dir3 = true; if (!Supermod3 && ghost3puomangiare) ghost3.Image = Properties.Resources.vdown; else if (!tresec || g3mangiato) { if (!tresec) ghost3.Image = Properties.Resources.crazy; if (g3mangiato) ghost3.Image = Properties.Resources.mdown; } else ghost3.Image = Properties.Resources.tempo; }
                     if (random3 == 4 && !dir3 && random3 != prec3) if (n == 1) { topghost3 = -ghost3velocity; dir3 = true; if (!Supermod3 && ghost3puomangiare) ghost3.Image = Properties.Resources.vup; else if (!tresec || g3mangiato) { if (!tresec) ghost3.Image = Properties.Resources.crazy; if (g3mangiato) ghost3.Image = Properties.Resources.mup1; } else ghost3.Image = Properties.Resources.tempo; }
                 }
                 if (random3 == 1) prec3 = 2;

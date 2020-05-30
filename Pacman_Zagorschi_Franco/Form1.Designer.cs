@@ -39,6 +39,7 @@ namespace Pacman_Zagorschi_Franco
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.timer6 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ghost3 = new System.Windows.Forms.Label();
@@ -397,6 +398,7 @@ namespace Pacman_Zagorschi_Franco
             this.label255 = new System.Windows.Forms.Label();
             this.label253 = new System.Windows.Forms.Label();
             this.label142 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -428,7 +430,7 @@ namespace Pacman_Zagorschi_Franco
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Image = global::Pacman_Zagorschi_Franco.Properties.Resources.lives;
-            this.label2.Location = new System.Drawing.Point(226, 399);
+            this.label2.Location = new System.Drawing.Point(198, 397);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 30);
             this.label2.TabIndex = 130;
@@ -471,11 +473,21 @@ namespace Pacman_Zagorschi_Franco
             this.timer6.Interval = 1;
             this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox11.Image = global::Pacman_Zagorschi_Franco.Properties.Resources._1sx;
+            this.pictureBox11.Location = new System.Drawing.Point(309, 402);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox11.TabIndex = 133;
+            this.pictureBox11.TabStop = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox2.Image = global::Pacman_Zagorschi_Franco.Properties.Resources._1sx;
-            this.pictureBox2.Location = new System.Drawing.Point(318, 402);
+            this.pictureBox2.Location = new System.Drawing.Point(286, 402);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(22, 22);
             this.pictureBox2.TabIndex = 132;
@@ -485,7 +497,7 @@ namespace Pacman_Zagorschi_Franco
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = global::Pacman_Zagorschi_Franco.Properties.Resources._1sx;
-            this.pictureBox1.Location = new System.Drawing.Point(297, 402);
+            this.pictureBox1.Location = new System.Drawing.Point(263, 402);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(22, 22);
             this.pictureBox1.TabIndex = 131;
@@ -541,226 +553,226 @@ namespace Pacman_Zagorschi_Franco
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.LightGreen;
             this.label4.Location = new System.Drawing.Point(102, 266);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(2, 2);
+            this.label4.Size = new System.Drawing.Size(4, 4);
             this.label4.TabIndex = 134;
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.LightGreen;
             this.label5.Location = new System.Drawing.Point(111, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(2, 2);
+            this.label5.Size = new System.Drawing.Size(4, 4);
             this.label5.TabIndex = 135;
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.LightGreen;
             this.label6.Location = new System.Drawing.Point(129, 266);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(2, 2);
+            this.label6.Size = new System.Drawing.Size(4, 4);
             this.label6.TabIndex = 137;
             // 
             // label7
             // 
-            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.BackColor = System.Drawing.Color.LightGreen;
             this.label7.Location = new System.Drawing.Point(120, 266);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(2, 2);
+            this.label7.Size = new System.Drawing.Size(4, 4);
             this.label7.TabIndex = 136;
             // 
             // label8
             // 
-            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.BackColor = System.Drawing.Color.LightGreen;
             this.label8.Location = new System.Drawing.Point(165, 266);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(2, 2);
+            this.label8.Size = new System.Drawing.Size(4, 4);
             this.label8.TabIndex = 141;
             // 
             // label9
             // 
-            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.BackColor = System.Drawing.Color.LightGreen;
             this.label9.Location = new System.Drawing.Point(156, 266);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(2, 2);
+            this.label9.Size = new System.Drawing.Size(4, 4);
             this.label9.TabIndex = 140;
             // 
             // label10
             // 
-            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.BackColor = System.Drawing.Color.LightGreen;
             this.label10.Location = new System.Drawing.Point(147, 266);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(2, 2);
+            this.label10.Size = new System.Drawing.Size(4, 4);
             this.label10.TabIndex = 139;
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.BackColor = System.Drawing.Color.LightGreen;
             this.label11.Location = new System.Drawing.Point(138, 266);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(2, 2);
+            this.label11.Size = new System.Drawing.Size(4, 4);
             this.label11.TabIndex = 138;
             // 
             // label12
             // 
-            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.BackColor = System.Drawing.Color.LightGreen;
             this.label12.Location = new System.Drawing.Point(94, 266);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(2, 2);
+            this.label12.Size = new System.Drawing.Size(4, 4);
             this.label12.TabIndex = 149;
             // 
             // label13
             // 
-            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.BackColor = System.Drawing.Color.LightGreen;
             this.label13.Location = new System.Drawing.Point(78, 266);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(2, 2);
+            this.label13.Size = new System.Drawing.Size(4, 4);
             this.label13.TabIndex = 148;
             // 
             // label14
             // 
-            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.BackColor = System.Drawing.Color.LightGreen;
             this.label14.Location = new System.Drawing.Point(69, 266);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(2, 2);
+            this.label14.Size = new System.Drawing.Size(4, 4);
             this.label14.TabIndex = 147;
             // 
             // label15
             // 
-            this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.BackColor = System.Drawing.Color.LightGreen;
             this.label15.Location = new System.Drawing.Point(60, 266);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(2, 2);
+            this.label15.Size = new System.Drawing.Size(4, 4);
             this.label15.TabIndex = 146;
             // 
             // label16
             // 
-            this.label16.BackColor = System.Drawing.Color.White;
+            this.label16.BackColor = System.Drawing.Color.LightGreen;
             this.label16.Location = new System.Drawing.Point(52, 266);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(2, 2);
+            this.label16.Size = new System.Drawing.Size(4, 4);
             this.label16.TabIndex = 145;
             // 
             // label17
             // 
-            this.label17.BackColor = System.Drawing.Color.White;
+            this.label17.BackColor = System.Drawing.Color.LightGreen;
             this.label17.Location = new System.Drawing.Point(43, 266);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(2, 2);
+            this.label17.Size = new System.Drawing.Size(4, 4);
             this.label17.TabIndex = 144;
             // 
             // label18
             // 
-            this.label18.BackColor = System.Drawing.Color.White;
+            this.label18.BackColor = System.Drawing.Color.LightGreen;
             this.label18.Location = new System.Drawing.Point(247, 266);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(2, 2);
+            this.label18.Size = new System.Drawing.Size(4, 4);
             this.label18.TabIndex = 163;
             // 
             // label19
             // 
-            this.label19.BackColor = System.Drawing.Color.White;
+            this.label19.BackColor = System.Drawing.Color.LightGreen;
             this.label19.Location = new System.Drawing.Point(238, 266);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(2, 2);
+            this.label19.Size = new System.Drawing.Size(4, 4);
             this.label19.TabIndex = 162;
             // 
             // label20
             // 
-            this.label20.BackColor = System.Drawing.Color.White;
+            this.label20.BackColor = System.Drawing.Color.LightGreen;
             this.label20.Location = new System.Drawing.Point(229, 266);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(2, 2);
+            this.label20.Size = new System.Drawing.Size(4, 4);
             this.label20.TabIndex = 161;
             // 
             // label21
             // 
-            this.label21.BackColor = System.Drawing.Color.White;
+            this.label21.BackColor = System.Drawing.Color.LightGreen;
             this.label21.Location = new System.Drawing.Point(220, 266);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(2, 2);
+            this.label21.Size = new System.Drawing.Size(4, 4);
             this.label21.TabIndex = 160;
             // 
             // label22
             // 
-            this.label22.BackColor = System.Drawing.Color.White;
+            this.label22.BackColor = System.Drawing.Color.LightGreen;
             this.label22.Location = new System.Drawing.Point(211, 266);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(2, 2);
+            this.label22.Size = new System.Drawing.Size(4, 4);
             this.label22.TabIndex = 159;
             // 
             // label23
             // 
-            this.label23.BackColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(202, 266);
+            this.label23.BackColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(198, 262);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(2, 2);
+            this.label23.Size = new System.Drawing.Size(10, 10);
             this.label23.TabIndex = 158;
             // 
             // label24
             // 
-            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.BackColor = System.Drawing.Color.LightGreen;
             this.label24.Location = new System.Drawing.Point(318, 266);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(2, 2);
+            this.label24.Size = new System.Drawing.Size(4, 4);
             this.label24.TabIndex = 157;
             // 
             // label25
             // 
-            this.label25.BackColor = System.Drawing.Color.White;
+            this.label25.BackColor = System.Drawing.Color.LightGreen;
             this.label25.Location = new System.Drawing.Point(310, 266);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(2, 2);
+            this.label25.Size = new System.Drawing.Size(4, 4);
             this.label25.TabIndex = 156;
             // 
             // label26
             // 
-            this.label26.BackColor = System.Drawing.Color.White;
+            this.label26.BackColor = System.Drawing.Color.LightGreen;
             this.label26.Location = new System.Drawing.Point(301, 266);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(2, 2);
+            this.label26.Size = new System.Drawing.Size(4, 4);
             this.label26.TabIndex = 155;
             // 
             // label27
             // 
-            this.label27.BackColor = System.Drawing.Color.White;
+            this.label27.BackColor = System.Drawing.Color.LightGreen;
             this.label27.Location = new System.Drawing.Point(292, 266);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(2, 2);
+            this.label27.Size = new System.Drawing.Size(4, 4);
             this.label27.TabIndex = 154;
             // 
             // label28
             // 
-            this.label28.BackColor = System.Drawing.Color.White;
+            this.label28.BackColor = System.Drawing.Color.LightGreen;
             this.label28.Location = new System.Drawing.Point(283, 266);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(2, 2);
+            this.label28.Size = new System.Drawing.Size(4, 4);
             this.label28.TabIndex = 153;
             // 
             // label29
             // 
-            this.label29.BackColor = System.Drawing.Color.White;
+            this.label29.BackColor = System.Drawing.Color.LightGreen;
             this.label29.Location = new System.Drawing.Point(274, 266);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(2, 2);
+            this.label29.Size = new System.Drawing.Size(4, 4);
             this.label29.TabIndex = 152;
             // 
             // label30
             // 
-            this.label30.BackColor = System.Drawing.Color.White;
+            this.label30.BackColor = System.Drawing.Color.LightGreen;
             this.label30.Location = new System.Drawing.Point(265, 266);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(2, 2);
+            this.label30.Size = new System.Drawing.Size(4, 4);
             this.label30.TabIndex = 151;
             // 
             // label31
             // 
-            this.label31.BackColor = System.Drawing.Color.White;
+            this.label31.BackColor = System.Drawing.Color.LightGreen;
             this.label31.Location = new System.Drawing.Point(256, 266);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(2, 2);
+            this.label31.Size = new System.Drawing.Size(4, 4);
             this.label31.TabIndex = 150;
             // 
             // score
@@ -776,314 +788,314 @@ namespace Pacman_Zagorschi_Franco
             // 
             // label43
             // 
-            this.label43.BackColor = System.Drawing.Color.White;
+            this.label43.BackColor = System.Drawing.Color.LightGreen;
             this.label43.Location = new System.Drawing.Point(165, 284);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(2, 2);
+            this.label43.Size = new System.Drawing.Size(4, 4);
             this.label43.TabIndex = 180;
             // 
             // label44
             // 
-            this.label44.BackColor = System.Drawing.Color.White;
+            this.label44.BackColor = System.Drawing.Color.LightGreen;
             this.label44.Location = new System.Drawing.Point(165, 293);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(2, 2);
+            this.label44.Size = new System.Drawing.Size(4, 4);
             this.label44.TabIndex = 181;
             // 
             // label32
             // 
-            this.label32.BackColor = System.Drawing.Color.White;
+            this.label32.BackColor = System.Drawing.Color.LightGreen;
             this.label32.Location = new System.Drawing.Point(165, 275);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(2, 2);
+            this.label32.Size = new System.Drawing.Size(4, 4);
             this.label32.TabIndex = 179;
             // 
             // label45
             // 
-            this.label45.BackColor = System.Drawing.Color.White;
+            this.label45.BackColor = System.Drawing.Color.LightGreen;
             this.label45.Location = new System.Drawing.Point(202, 293);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(2, 2);
+            this.label45.Size = new System.Drawing.Size(4, 4);
             this.label45.TabIndex = 185;
             // 
             // label46
             // 
-            this.label46.BackColor = System.Drawing.Color.White;
+            this.label46.BackColor = System.Drawing.Color.LightGreen;
             this.label46.Location = new System.Drawing.Point(202, 284);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(2, 2);
+            this.label46.Size = new System.Drawing.Size(4, 4);
             this.label46.TabIndex = 184;
             // 
             // label47
             // 
-            this.label47.BackColor = System.Drawing.Color.White;
+            this.label47.BackColor = System.Drawing.Color.LightGreen;
             this.label47.Location = new System.Drawing.Point(202, 275);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(2, 2);
+            this.label47.Size = new System.Drawing.Size(4, 4);
             this.label47.TabIndex = 183;
             // 
             // label49
             // 
-            this.label49.BackColor = System.Drawing.Color.White;
+            this.label49.BackColor = System.Drawing.Color.LightGreen;
             this.label49.Location = new System.Drawing.Point(326, 266);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(2, 2);
+            this.label49.Size = new System.Drawing.Size(4, 4);
             this.label49.TabIndex = 186;
             // 
             // label50
             // 
-            this.label50.BackColor = System.Drawing.Color.White;
+            this.label50.BackColor = System.Drawing.Color.LightGreen;
             this.label50.Location = new System.Drawing.Point(35, 266);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(2, 2);
+            this.label50.Size = new System.Drawing.Size(4, 4);
             this.label50.TabIndex = 187;
             // 
             // label33
             // 
-            this.label33.BackColor = System.Drawing.Color.White;
+            this.label33.BackColor = System.Drawing.Color.LightGreen;
             this.label33.Location = new System.Drawing.Point(94, 302);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(2, 2);
+            this.label33.Size = new System.Drawing.Size(4, 4);
             this.label33.TabIndex = 196;
             // 
             // label34
             // 
-            this.label34.BackColor = System.Drawing.Color.White;
+            this.label34.BackColor = System.Drawing.Color.LightGreen;
             this.label34.Location = new System.Drawing.Point(165, 302);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(2, 2);
+            this.label34.Size = new System.Drawing.Size(4, 4);
             this.label34.TabIndex = 195;
             // 
             // label35
             // 
-            this.label35.BackColor = System.Drawing.Color.White;
+            this.label35.BackColor = System.Drawing.Color.LightGreen;
             this.label35.Location = new System.Drawing.Point(156, 302);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(2, 2);
+            this.label35.Size = new System.Drawing.Size(4, 4);
             this.label35.TabIndex = 194;
             // 
             // label36
             // 
-            this.label36.BackColor = System.Drawing.Color.White;
+            this.label36.BackColor = System.Drawing.Color.LightGreen;
             this.label36.Location = new System.Drawing.Point(147, 302);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(2, 2);
+            this.label36.Size = new System.Drawing.Size(4, 4);
             this.label36.TabIndex = 193;
             // 
             // label37
             // 
-            this.label37.BackColor = System.Drawing.Color.White;
+            this.label37.BackColor = System.Drawing.Color.LightGreen;
             this.label37.Location = new System.Drawing.Point(138, 302);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(2, 2);
+            this.label37.Size = new System.Drawing.Size(4, 4);
             this.label37.TabIndex = 192;
             // 
             // label38
             // 
-            this.label38.BackColor = System.Drawing.Color.White;
+            this.label38.BackColor = System.Drawing.Color.LightGreen;
             this.label38.Location = new System.Drawing.Point(129, 302);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(2, 2);
+            this.label38.Size = new System.Drawing.Size(4, 4);
             this.label38.TabIndex = 191;
             // 
             // label39
             // 
-            this.label39.BackColor = System.Drawing.Color.White;
+            this.label39.BackColor = System.Drawing.Color.LightGreen;
             this.label39.Location = new System.Drawing.Point(120, 302);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(2, 2);
+            this.label39.Size = new System.Drawing.Size(4, 4);
             this.label39.TabIndex = 190;
             // 
             // label40
             // 
-            this.label40.BackColor = System.Drawing.Color.White;
+            this.label40.BackColor = System.Drawing.Color.LightGreen;
             this.label40.Location = new System.Drawing.Point(111, 302);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(2, 2);
+            this.label40.Size = new System.Drawing.Size(4, 4);
             this.label40.TabIndex = 189;
             // 
             // label41
             // 
-            this.label41.BackColor = System.Drawing.Color.White;
+            this.label41.BackColor = System.Drawing.Color.LightGreen;
             this.label41.Location = new System.Drawing.Point(102, 302);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(2, 2);
+            this.label41.Size = new System.Drawing.Size(4, 4);
             this.label41.TabIndex = 188;
             // 
             // label42
             // 
-            this.label42.BackColor = System.Drawing.Color.White;
+            this.label42.BackColor = System.Drawing.Color.LightGreen;
             this.label42.Location = new System.Drawing.Point(202, 302);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(2, 2);
+            this.label42.Size = new System.Drawing.Size(4, 4);
             this.label42.TabIndex = 205;
             // 
             // label48
             // 
-            this.label48.BackColor = System.Drawing.Color.White;
+            this.label48.BackColor = System.Drawing.Color.LightGreen;
             this.label48.Location = new System.Drawing.Point(274, 302);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(2, 2);
+            this.label48.Size = new System.Drawing.Size(4, 4);
             this.label48.TabIndex = 204;
             // 
             // label51
             // 
-            this.label51.BackColor = System.Drawing.Color.White;
+            this.label51.BackColor = System.Drawing.Color.LightGreen;
             this.label51.Location = new System.Drawing.Point(265, 302);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(2, 2);
+            this.label51.Size = new System.Drawing.Size(4, 4);
             this.label51.TabIndex = 203;
             // 
             // label52
             // 
-            this.label52.BackColor = System.Drawing.Color.White;
+            this.label52.BackColor = System.Drawing.Color.LightGreen;
             this.label52.Location = new System.Drawing.Point(256, 302);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(2, 2);
+            this.label52.Size = new System.Drawing.Size(4, 4);
             this.label52.TabIndex = 202;
             // 
             // label53
             // 
-            this.label53.BackColor = System.Drawing.Color.White;
+            this.label53.BackColor = System.Drawing.Color.LightGreen;
             this.label53.Location = new System.Drawing.Point(247, 302);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(2, 2);
+            this.label53.Size = new System.Drawing.Size(4, 4);
             this.label53.TabIndex = 201;
             // 
             // label54
             // 
-            this.label54.BackColor = System.Drawing.Color.White;
+            this.label54.BackColor = System.Drawing.Color.LightGreen;
             this.label54.Location = new System.Drawing.Point(238, 302);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(2, 2);
+            this.label54.Size = new System.Drawing.Size(4, 4);
             this.label54.TabIndex = 200;
             // 
             // label55
             // 
-            this.label55.BackColor = System.Drawing.Color.White;
+            this.label55.BackColor = System.Drawing.Color.LightGreen;
             this.label55.Location = new System.Drawing.Point(229, 302);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(2, 2);
+            this.label55.Size = new System.Drawing.Size(4, 4);
             this.label55.TabIndex = 199;
             // 
             // label56
             // 
-            this.label56.BackColor = System.Drawing.Color.White;
+            this.label56.BackColor = System.Drawing.Color.LightGreen;
             this.label56.Location = new System.Drawing.Point(220, 302);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(2, 2);
+            this.label56.Size = new System.Drawing.Size(4, 4);
             this.label56.TabIndex = 198;
             // 
             // label57
             // 
-            this.label57.BackColor = System.Drawing.Color.White;
+            this.label57.BackColor = System.Drawing.Color.LightGreen;
             this.label57.Location = new System.Drawing.Point(211, 302);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(2, 2);
+            this.label57.Size = new System.Drawing.Size(4, 4);
             this.label57.TabIndex = 197;
             // 
             // label58
             // 
-            this.label58.BackColor = System.Drawing.Color.White;
+            this.label58.BackColor = System.Drawing.Color.LightGreen;
             this.label58.Location = new System.Drawing.Point(94, 293);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(2, 2);
+            this.label58.Size = new System.Drawing.Size(4, 4);
             this.label58.TabIndex = 208;
             // 
             // label59
             // 
-            this.label59.BackColor = System.Drawing.Color.White;
+            this.label59.BackColor = System.Drawing.Color.LightGreen;
             this.label59.Location = new System.Drawing.Point(94, 284);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(2, 2);
+            this.label59.Size = new System.Drawing.Size(4, 4);
             this.label59.TabIndex = 207;
             // 
             // label60
             // 
-            this.label60.BackColor = System.Drawing.Color.White;
+            this.label60.BackColor = System.Drawing.Color.LightGreen;
             this.label60.Location = new System.Drawing.Point(94, 275);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(2, 2);
+            this.label60.Size = new System.Drawing.Size(4, 4);
             this.label60.TabIndex = 206;
             // 
             // label61
             // 
-            this.label61.BackColor = System.Drawing.Color.White;
+            this.label61.BackColor = System.Drawing.Color.LightGreen;
             this.label61.Location = new System.Drawing.Point(274, 293);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(2, 2);
+            this.label61.Size = new System.Drawing.Size(4, 4);
             this.label61.TabIndex = 211;
             // 
             // label62
             // 
-            this.label62.BackColor = System.Drawing.Color.White;
+            this.label62.BackColor = System.Drawing.Color.LightGreen;
             this.label62.Location = new System.Drawing.Point(274, 284);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(2, 2);
+            this.label62.Size = new System.Drawing.Size(4, 4);
             this.label62.TabIndex = 210;
             // 
             // label63
             // 
-            this.label63.BackColor = System.Drawing.Color.White;
+            this.label63.BackColor = System.Drawing.Color.LightGreen;
             this.label63.Location = new System.Drawing.Point(274, 275);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(2, 2);
+            this.label63.Size = new System.Drawing.Size(4, 4);
             this.label63.TabIndex = 209;
             // 
             // label64
             // 
-            this.label64.BackColor = System.Drawing.Color.White;
+            this.label64.BackColor = System.Drawing.Color.LightGreen;
             this.label64.Location = new System.Drawing.Point(183, 302);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(2, 2);
+            this.label64.Size = new System.Drawing.Size(4, 4);
             this.label64.TabIndex = 213;
             // 
             // label65
             // 
-            this.label65.BackColor = System.Drawing.Color.White;
+            this.label65.BackColor = System.Drawing.Color.LightGreen;
             this.label65.Location = new System.Drawing.Point(174, 302);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(2, 2);
+            this.label65.Size = new System.Drawing.Size(4, 4);
             this.label65.TabIndex = 212;
             // 
             // label66
             // 
-            this.label66.BackColor = System.Drawing.Color.White;
+            this.label66.BackColor = System.Drawing.Color.LightGreen;
             this.label66.Location = new System.Drawing.Point(192, 302);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(2, 2);
+            this.label66.Size = new System.Drawing.Size(4, 4);
             this.label66.TabIndex = 214;
             // 
             // label67
             // 
-            this.label67.BackColor = System.Drawing.Color.White;
+            this.label67.BackColor = System.Drawing.Color.LightGreen;
             this.label67.Location = new System.Drawing.Point(334, 293);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(2, 2);
+            this.label67.Size = new System.Drawing.Size(4, 4);
             this.label67.TabIndex = 217;
             // 
             // label68
             // 
-            this.label68.BackColor = System.Drawing.Color.White;
+            this.label68.BackColor = System.Drawing.Color.LightGreen;
             this.label68.Location = new System.Drawing.Point(334, 284);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(2, 2);
+            this.label68.Size = new System.Drawing.Size(4, 4);
             this.label68.TabIndex = 216;
             // 
             // label69
             // 
-            this.label69.BackColor = System.Drawing.Color.White;
+            this.label69.BackColor = System.Drawing.Color.LightGreen;
             this.label69.Location = new System.Drawing.Point(334, 275);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(2, 2);
+            this.label69.Size = new System.Drawing.Size(4, 4);
             this.label69.TabIndex = 215;
             // 
             // label70
             // 
-            this.label70.BackColor = System.Drawing.Color.White;
+            this.label70.BackColor = System.Drawing.Color.LightGreen;
             this.label70.Location = new System.Drawing.Point(334, 266);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(2, 2);
+            this.label70.Size = new System.Drawing.Size(4, 4);
             this.label70.TabIndex = 218;
             // 
             // label71
@@ -1097,786 +1109,786 @@ namespace Pacman_Zagorschi_Franco
             // 
             // label72
             // 
-            this.label72.BackColor = System.Drawing.Color.White;
+            this.label72.BackColor = System.Drawing.Color.LightGreen;
             this.label72.Location = new System.Drawing.Point(326, 302);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(2, 2);
+            this.label72.Size = new System.Drawing.Size(4, 4);
             this.label72.TabIndex = 221;
             // 
             // label73
             // 
-            this.label73.BackColor = System.Drawing.Color.White;
+            this.label73.BackColor = System.Drawing.Color.LightGreen;
             this.label73.Location = new System.Drawing.Point(318, 302);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(2, 2);
+            this.label73.Size = new System.Drawing.Size(4, 4);
             this.label73.TabIndex = 220;
             // 
             // label74
             // 
-            this.label74.BackColor = System.Drawing.Color.White;
+            this.label74.BackColor = System.Drawing.Color.LightGreen;
             this.label74.Location = new System.Drawing.Point(310, 302);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(2, 2);
+            this.label74.Size = new System.Drawing.Size(4, 4);
             this.label74.TabIndex = 219;
             // 
             // label76
             // 
-            this.label76.BackColor = System.Drawing.Color.White;
+            this.label76.BackColor = System.Drawing.Color.LightGreen;
             this.label76.Location = new System.Drawing.Point(310, 311);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(2, 2);
+            this.label76.Size = new System.Drawing.Size(4, 4);
             this.label76.TabIndex = 226;
             // 
             // label77
             // 
-            this.label77.BackColor = System.Drawing.Color.White;
+            this.label77.BackColor = System.Drawing.Color.LightGreen;
             this.label77.Location = new System.Drawing.Point(310, 338);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(2, 2);
+            this.label77.Size = new System.Drawing.Size(4, 4);
             this.label77.TabIndex = 225;
             // 
             // label78
             // 
-            this.label78.BackColor = System.Drawing.Color.White;
+            this.label78.BackColor = System.Drawing.Color.LightGreen;
             this.label78.Location = new System.Drawing.Point(310, 329);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(2, 2);
+            this.label78.Size = new System.Drawing.Size(4, 4);
             this.label78.TabIndex = 224;
             // 
             // label79
             // 
-            this.label79.BackColor = System.Drawing.Color.White;
+            this.label79.BackColor = System.Drawing.Color.LightGreen;
             this.label79.Location = new System.Drawing.Point(310, 320);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(2, 2);
+            this.label79.Size = new System.Drawing.Size(4, 4);
             this.label79.TabIndex = 223;
             // 
             // label80
             // 
-            this.label80.BackColor = System.Drawing.Color.White;
+            this.label80.BackColor = System.Drawing.Color.LightGreen;
             this.label80.Location = new System.Drawing.Point(301, 338);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(2, 2);
+            this.label80.Size = new System.Drawing.Size(4, 4);
             this.label80.TabIndex = 230;
             // 
             // label81
             // 
-            this.label81.BackColor = System.Drawing.Color.White;
+            this.label81.BackColor = System.Drawing.Color.LightGreen;
             this.label81.Location = new System.Drawing.Point(292, 338);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(2, 2);
+            this.label81.Size = new System.Drawing.Size(4, 4);
             this.label81.TabIndex = 229;
             // 
             // label82
             // 
-            this.label82.BackColor = System.Drawing.Color.White;
+            this.label82.BackColor = System.Drawing.Color.LightGreen;
             this.label82.Location = new System.Drawing.Point(283, 338);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(2, 2);
+            this.label82.Size = new System.Drawing.Size(4, 4);
             this.label82.TabIndex = 228;
             // 
             // label83
             // 
-            this.label83.BackColor = System.Drawing.Color.White;
+            this.label83.BackColor = System.Drawing.Color.LightGreen;
             this.label83.Location = new System.Drawing.Point(274, 338);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(2, 2);
+            this.label83.Size = new System.Drawing.Size(4, 4);
             this.label83.TabIndex = 227;
             // 
             // label75
             // 
-            this.label75.BackColor = System.Drawing.Color.White;
+            this.label75.BackColor = System.Drawing.Color.LightGreen;
             this.label75.Location = new System.Drawing.Point(274, 311);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(2, 2);
+            this.label75.Size = new System.Drawing.Size(4, 4);
             this.label75.TabIndex = 233;
             // 
             // label84
             // 
-            this.label84.BackColor = System.Drawing.Color.White;
+            this.label84.BackColor = System.Drawing.Color.LightGreen;
             this.label84.Location = new System.Drawing.Point(274, 329);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(2, 2);
+            this.label84.Size = new System.Drawing.Size(4, 4);
             this.label84.TabIndex = 232;
             // 
             // label85
             // 
-            this.label85.BackColor = System.Drawing.Color.White;
+            this.label85.BackColor = System.Drawing.Color.LightGreen;
             this.label85.Location = new System.Drawing.Point(274, 320);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(2, 2);
+            this.label85.Size = new System.Drawing.Size(4, 4);
             this.label85.TabIndex = 231;
             // 
             // label86
             // 
-            this.label86.BackColor = System.Drawing.Color.White;
+            this.label86.BackColor = System.Drawing.Color.LightGreen;
             this.label86.Location = new System.Drawing.Point(238, 311);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(2, 2);
+            this.label86.Size = new System.Drawing.Size(4, 4);
             this.label86.TabIndex = 237;
             // 
             // label87
             // 
-            this.label87.BackColor = System.Drawing.Color.White;
+            this.label87.BackColor = System.Drawing.Color.LightGreen;
             this.label87.Location = new System.Drawing.Point(238, 329);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(2, 2);
+            this.label87.Size = new System.Drawing.Size(4, 4);
             this.label87.TabIndex = 236;
             // 
             // label88
             // 
-            this.label88.BackColor = System.Drawing.Color.White;
+            this.label88.BackColor = System.Drawing.Color.LightGreen;
             this.label88.Location = new System.Drawing.Point(238, 320);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(2, 2);
+            this.label88.Size = new System.Drawing.Size(4, 4);
             this.label88.TabIndex = 235;
             // 
             // label89
             // 
-            this.label89.BackColor = System.Drawing.Color.White;
+            this.label89.BackColor = System.Drawing.Color.LightGreen;
             this.label89.Location = new System.Drawing.Point(238, 338);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(2, 2);
+            this.label89.Size = new System.Drawing.Size(4, 4);
             this.label89.TabIndex = 234;
             // 
             // label90
             // 
-            this.label90.BackColor = System.Drawing.Color.White;
+            this.label90.BackColor = System.Drawing.Color.LightGreen;
             this.label90.Location = new System.Drawing.Point(220, 338);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(2, 2);
+            this.label90.Size = new System.Drawing.Size(4, 4);
             this.label90.TabIndex = 242;
             // 
             // label91
             // 
-            this.label91.BackColor = System.Drawing.Color.White;
+            this.label91.BackColor = System.Drawing.Color.LightGreen;
             this.label91.Location = new System.Drawing.Point(211, 338);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(2, 2);
+            this.label91.Size = new System.Drawing.Size(4, 4);
             this.label91.TabIndex = 241;
             // 
             // label92
             // 
-            this.label92.BackColor = System.Drawing.Color.White;
+            this.label92.BackColor = System.Drawing.Color.LightGreen;
             this.label92.Location = new System.Drawing.Point(202, 338);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(2, 2);
+            this.label92.Size = new System.Drawing.Size(4, 4);
             this.label92.TabIndex = 240;
             // 
             // label94
             // 
-            this.label94.BackColor = System.Drawing.Color.White;
+            this.label94.BackColor = System.Drawing.Color.LightGreen;
             this.label94.Location = new System.Drawing.Point(229, 338);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(2, 2);
+            this.label94.Size = new System.Drawing.Size(4, 4);
             this.label94.TabIndex = 238;
             // 
             // label93
             // 
-            this.label93.BackColor = System.Drawing.Color.White;
+            this.label93.BackColor = System.Drawing.Color.LightGreen;
             this.label93.Location = new System.Drawing.Point(202, 356);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(2, 2);
+            this.label93.Size = new System.Drawing.Size(4, 4);
             this.label93.TabIndex = 247;
             // 
             // label95
             // 
-            this.label95.BackColor = System.Drawing.Color.White;
+            this.label95.BackColor = System.Drawing.Color.LightGreen;
             this.label95.Location = new System.Drawing.Point(202, 374);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(2, 2);
+            this.label95.Size = new System.Drawing.Size(4, 4);
             this.label95.TabIndex = 246;
             // 
             // label96
             // 
-            this.label96.BackColor = System.Drawing.Color.White;
+            this.label96.BackColor = System.Drawing.Color.LightGreen;
             this.label96.Location = new System.Drawing.Point(202, 365);
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(2, 2);
+            this.label96.Size = new System.Drawing.Size(4, 4);
             this.label96.TabIndex = 245;
             // 
             // label98
             // 
-            this.label98.BackColor = System.Drawing.Color.White;
+            this.label98.BackColor = System.Drawing.Color.LightGreen;
             this.label98.Location = new System.Drawing.Point(202, 347);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(2, 2);
+            this.label98.Size = new System.Drawing.Size(4, 4);
             this.label98.TabIndex = 243;
             // 
             // label97
             // 
-            this.label97.BackColor = System.Drawing.Color.White;
+            this.label97.BackColor = System.Drawing.Color.LightGreen;
             this.label97.Location = new System.Drawing.Point(334, 356);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(2, 2);
+            this.label97.Size = new System.Drawing.Size(4, 4);
             this.label97.TabIndex = 252;
             // 
             // label99
             // 
-            this.label99.BackColor = System.Drawing.Color.White;
+            this.label99.BackColor = System.Drawing.Color.LightGreen;
             this.label99.Location = new System.Drawing.Point(334, 374);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(2, 2);
+            this.label99.Size = new System.Drawing.Size(4, 4);
             this.label99.TabIndex = 251;
             // 
             // label100
             // 
-            this.label100.BackColor = System.Drawing.Color.White;
+            this.label100.BackColor = System.Drawing.Color.LightGreen;
             this.label100.Location = new System.Drawing.Point(334, 365);
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(2, 2);
+            this.label100.Size = new System.Drawing.Size(4, 4);
             this.label100.TabIndex = 250;
             // 
             // label101
             // 
-            this.label101.BackColor = System.Drawing.Color.White;
+            this.label101.BackColor = System.Drawing.Color.LightGreen;
             this.label101.Location = new System.Drawing.Point(334, 347);
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(2, 2);
+            this.label101.Size = new System.Drawing.Size(4, 4);
             this.label101.TabIndex = 249;
             // 
             // label102
             // 
-            this.label102.BackColor = System.Drawing.Color.White;
+            this.label102.BackColor = System.Drawing.Color.LightGreen;
             this.label102.Location = new System.Drawing.Point(334, 338);
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(2, 2);
+            this.label102.Size = new System.Drawing.Size(4, 4);
             this.label102.TabIndex = 248;
             // 
             // label103
             // 
-            this.label103.BackColor = System.Drawing.Color.White;
+            this.label103.BackColor = System.Drawing.Color.LightGreen;
             this.label103.Location = new System.Drawing.Point(326, 338);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(2, 2);
+            this.label103.Size = new System.Drawing.Size(4, 4);
             this.label103.TabIndex = 254;
             // 
             // label104
             // 
-            this.label104.BackColor = System.Drawing.Color.White;
+            this.label104.BackColor = System.Drawing.Color.LightGreen;
             this.label104.Location = new System.Drawing.Point(318, 338);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(2, 2);
+            this.label104.Size = new System.Drawing.Size(4, 4);
             this.label104.TabIndex = 253;
             // 
             // label105
             // 
-            this.label105.BackColor = System.Drawing.Color.White;
+            this.label105.BackColor = System.Drawing.Color.LightGreen;
             this.label105.Location = new System.Drawing.Point(326, 374);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(2, 2);
+            this.label105.Size = new System.Drawing.Size(4, 4);
             this.label105.TabIndex = 268;
             // 
             // label106
             // 
-            this.label106.BackColor = System.Drawing.Color.White;
+            this.label106.BackColor = System.Drawing.Color.LightGreen;
             this.label106.Location = new System.Drawing.Point(247, 374);
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(2, 2);
+            this.label106.Size = new System.Drawing.Size(4, 4);
             this.label106.TabIndex = 267;
             // 
             // label107
             // 
-            this.label107.BackColor = System.Drawing.Color.White;
+            this.label107.BackColor = System.Drawing.Color.LightGreen;
             this.label107.Location = new System.Drawing.Point(238, 374);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(2, 2);
+            this.label107.Size = new System.Drawing.Size(4, 4);
             this.label107.TabIndex = 266;
             // 
             // label108
             // 
-            this.label108.BackColor = System.Drawing.Color.White;
+            this.label108.BackColor = System.Drawing.Color.LightGreen;
             this.label108.Location = new System.Drawing.Point(229, 374);
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(2, 2);
+            this.label108.Size = new System.Drawing.Size(4, 4);
             this.label108.TabIndex = 265;
             // 
             // label109
             // 
-            this.label109.BackColor = System.Drawing.Color.White;
+            this.label109.BackColor = System.Drawing.Color.LightGreen;
             this.label109.Location = new System.Drawing.Point(220, 374);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(2, 2);
+            this.label109.Size = new System.Drawing.Size(4, 4);
             this.label109.TabIndex = 264;
             // 
             // label110
             // 
-            this.label110.BackColor = System.Drawing.Color.White;
+            this.label110.BackColor = System.Drawing.Color.LightGreen;
             this.label110.Location = new System.Drawing.Point(211, 374);
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(2, 2);
+            this.label110.Size = new System.Drawing.Size(4, 4);
             this.label110.TabIndex = 263;
             // 
             // label111
             // 
-            this.label111.BackColor = System.Drawing.Color.White;
+            this.label111.BackColor = System.Drawing.Color.LightGreen;
             this.label111.Location = new System.Drawing.Point(318, 374);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(2, 2);
+            this.label111.Size = new System.Drawing.Size(4, 4);
             this.label111.TabIndex = 262;
             // 
             // label112
             // 
-            this.label112.BackColor = System.Drawing.Color.White;
+            this.label112.BackColor = System.Drawing.Color.LightGreen;
             this.label112.Location = new System.Drawing.Point(310, 374);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(2, 2);
+            this.label112.Size = new System.Drawing.Size(4, 4);
             this.label112.TabIndex = 261;
             // 
             // label113
             // 
-            this.label113.BackColor = System.Drawing.Color.White;
+            this.label113.BackColor = System.Drawing.Color.LightGreen;
             this.label113.Location = new System.Drawing.Point(301, 374);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(2, 2);
+            this.label113.Size = new System.Drawing.Size(4, 4);
             this.label113.TabIndex = 260;
             // 
             // label114
             // 
-            this.label114.BackColor = System.Drawing.Color.White;
+            this.label114.BackColor = System.Drawing.Color.LightGreen;
             this.label114.Location = new System.Drawing.Point(292, 374);
             this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(2, 2);
+            this.label114.Size = new System.Drawing.Size(4, 4);
             this.label114.TabIndex = 259;
             // 
             // label115
             // 
-            this.label115.BackColor = System.Drawing.Color.White;
+            this.label115.BackColor = System.Drawing.Color.LightGreen;
             this.label115.Location = new System.Drawing.Point(283, 374);
             this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(2, 2);
+            this.label115.Size = new System.Drawing.Size(4, 4);
             this.label115.TabIndex = 258;
             // 
             // label116
             // 
-            this.label116.BackColor = System.Drawing.Color.White;
+            this.label116.BackColor = System.Drawing.Color.LightGreen;
             this.label116.Location = new System.Drawing.Point(274, 374);
             this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(2, 2);
+            this.label116.Size = new System.Drawing.Size(4, 4);
             this.label116.TabIndex = 257;
             // 
             // label117
             // 
-            this.label117.BackColor = System.Drawing.Color.White;
+            this.label117.BackColor = System.Drawing.Color.LightGreen;
             this.label117.Location = new System.Drawing.Point(265, 374);
             this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(2, 2);
+            this.label117.Size = new System.Drawing.Size(4, 4);
             this.label117.TabIndex = 256;
             // 
             // label118
             // 
-            this.label118.BackColor = System.Drawing.Color.White;
+            this.label118.BackColor = System.Drawing.Color.LightGreen;
             this.label118.Location = new System.Drawing.Point(256, 374);
             this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(2, 2);
+            this.label118.Size = new System.Drawing.Size(4, 4);
             this.label118.TabIndex = 255;
             // 
             // label119
             // 
-            this.label119.BackColor = System.Drawing.Color.White;
+            this.label119.BackColor = System.Drawing.Color.LightGreen;
             this.label119.Location = new System.Drawing.Point(157, 374);
             this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(2, 2);
+            this.label119.Size = new System.Drawing.Size(4, 4);
             this.label119.TabIndex = 312;
             // 
             // label120
             // 
-            this.label120.BackColor = System.Drawing.Color.White;
+            this.label120.BackColor = System.Drawing.Color.LightGreen;
             this.label120.Location = new System.Drawing.Point(78, 374);
             this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(2, 2);
+            this.label120.Size = new System.Drawing.Size(4, 4);
             this.label120.TabIndex = 311;
             // 
             // label121
             // 
-            this.label121.BackColor = System.Drawing.Color.White;
+            this.label121.BackColor = System.Drawing.Color.LightGreen;
             this.label121.Location = new System.Drawing.Point(69, 374);
             this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(2, 2);
+            this.label121.Size = new System.Drawing.Size(4, 4);
             this.label121.TabIndex = 310;
             // 
             // label122
             // 
-            this.label122.BackColor = System.Drawing.Color.White;
+            this.label122.BackColor = System.Drawing.Color.LightGreen;
             this.label122.Location = new System.Drawing.Point(60, 374);
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(2, 2);
+            this.label122.Size = new System.Drawing.Size(4, 4);
             this.label122.TabIndex = 309;
             // 
             // label123
             // 
-            this.label123.BackColor = System.Drawing.Color.White;
+            this.label123.BackColor = System.Drawing.Color.LightGreen;
             this.label123.Location = new System.Drawing.Point(51, 374);
             this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(2, 2);
+            this.label123.Size = new System.Drawing.Size(4, 4);
             this.label123.TabIndex = 308;
             // 
             // label125
             // 
-            this.label125.BackColor = System.Drawing.Color.White;
+            this.label125.BackColor = System.Drawing.Color.LightGreen;
             this.label125.Location = new System.Drawing.Point(149, 374);
             this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(2, 2);
+            this.label125.Size = new System.Drawing.Size(4, 4);
             this.label125.TabIndex = 306;
             // 
             // label126
             // 
-            this.label126.BackColor = System.Drawing.Color.White;
+            this.label126.BackColor = System.Drawing.Color.LightGreen;
             this.label126.Location = new System.Drawing.Point(141, 374);
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(2, 2);
+            this.label126.Size = new System.Drawing.Size(4, 4);
             this.label126.TabIndex = 305;
             // 
             // label127
             // 
-            this.label127.BackColor = System.Drawing.Color.White;
+            this.label127.BackColor = System.Drawing.Color.LightGreen;
             this.label127.Location = new System.Drawing.Point(132, 374);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(2, 2);
+            this.label127.Size = new System.Drawing.Size(4, 4);
             this.label127.TabIndex = 304;
             // 
             // label128
             // 
-            this.label128.BackColor = System.Drawing.Color.White;
+            this.label128.BackColor = System.Drawing.Color.LightGreen;
             this.label128.Location = new System.Drawing.Point(123, 374);
             this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(2, 2);
+            this.label128.Size = new System.Drawing.Size(4, 4);
             this.label128.TabIndex = 303;
             // 
             // label129
             // 
-            this.label129.BackColor = System.Drawing.Color.White;
+            this.label129.BackColor = System.Drawing.Color.LightGreen;
             this.label129.Location = new System.Drawing.Point(114, 374);
             this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(2, 2);
+            this.label129.Size = new System.Drawing.Size(4, 4);
             this.label129.TabIndex = 302;
             // 
             // label130
             // 
-            this.label130.BackColor = System.Drawing.Color.White;
+            this.label130.BackColor = System.Drawing.Color.LightGreen;
             this.label130.Location = new System.Drawing.Point(105, 374);
             this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(2, 2);
+            this.label130.Size = new System.Drawing.Size(4, 4);
             this.label130.TabIndex = 301;
             // 
             // label131
             // 
-            this.label131.BackColor = System.Drawing.Color.White;
+            this.label131.BackColor = System.Drawing.Color.LightGreen;
             this.label131.Location = new System.Drawing.Point(96, 374);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(2, 2);
+            this.label131.Size = new System.Drawing.Size(4, 4);
             this.label131.TabIndex = 300;
             // 
             // label132
             // 
-            this.label132.BackColor = System.Drawing.Color.White;
+            this.label132.BackColor = System.Drawing.Color.LightGreen;
             this.label132.Location = new System.Drawing.Point(87, 374);
             this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(2, 2);
+            this.label132.Size = new System.Drawing.Size(4, 4);
             this.label132.TabIndex = 299;
             // 
             // label133
             // 
-            this.label133.BackColor = System.Drawing.Color.White;
+            this.label133.BackColor = System.Drawing.Color.LightGreen;
             this.label133.Location = new System.Drawing.Point(156, 338);
             this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(2, 2);
+            this.label133.Size = new System.Drawing.Size(4, 4);
             this.label133.TabIndex = 298;
             // 
             // label134
             // 
-            this.label134.BackColor = System.Drawing.Color.White;
+            this.label134.BackColor = System.Drawing.Color.LightGreen;
             this.label134.Location = new System.Drawing.Point(147, 338);
             this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(2, 2);
+            this.label134.Size = new System.Drawing.Size(4, 4);
             this.label134.TabIndex = 297;
             // 
             // label135
             // 
-            this.label135.BackColor = System.Drawing.Color.White;
+            this.label135.BackColor = System.Drawing.Color.LightGreen;
             this.label135.Location = new System.Drawing.Point(165, 356);
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(2, 2);
+            this.label135.Size = new System.Drawing.Size(4, 4);
             this.label135.TabIndex = 296;
             // 
             // label136
             // 
-            this.label136.BackColor = System.Drawing.Color.White;
+            this.label136.BackColor = System.Drawing.Color.LightGreen;
             this.label136.Location = new System.Drawing.Point(165, 374);
             this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(2, 2);
+            this.label136.Size = new System.Drawing.Size(4, 4);
             this.label136.TabIndex = 295;
             // 
             // label137
             // 
-            this.label137.BackColor = System.Drawing.Color.White;
+            this.label137.BackColor = System.Drawing.Color.LightGreen;
             this.label137.Location = new System.Drawing.Point(165, 365);
             this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(2, 2);
+            this.label137.Size = new System.Drawing.Size(4, 4);
             this.label137.TabIndex = 294;
             // 
             // label138
             // 
-            this.label138.BackColor = System.Drawing.Color.White;
+            this.label138.BackColor = System.Drawing.Color.LightGreen;
             this.label138.Location = new System.Drawing.Point(165, 347);
             this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(2, 2);
+            this.label138.Size = new System.Drawing.Size(4, 4);
             this.label138.TabIndex = 293;
             // 
             // label139
             // 
-            this.label139.BackColor = System.Drawing.Color.White;
+            this.label139.BackColor = System.Drawing.Color.LightGreen;
             this.label139.Location = new System.Drawing.Point(165, 338);
             this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(2, 2);
+            this.label139.Size = new System.Drawing.Size(4, 4);
             this.label139.TabIndex = 292;
             // 
             // label140
             // 
-            this.label140.BackColor = System.Drawing.Color.White;
+            this.label140.BackColor = System.Drawing.Color.LightGreen;
             this.label140.Location = new System.Drawing.Point(35, 356);
             this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(2, 2);
+            this.label140.Size = new System.Drawing.Size(4, 4);
             this.label140.TabIndex = 291;
             // 
             // label143
             // 
-            this.label143.BackColor = System.Drawing.Color.White;
+            this.label143.BackColor = System.Drawing.Color.LightGreen;
             this.label143.Location = new System.Drawing.Point(35, 347);
             this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(2, 2);
+            this.label143.Size = new System.Drawing.Size(4, 4);
             this.label143.TabIndex = 288;
             // 
             // label144
             // 
-            this.label144.BackColor = System.Drawing.Color.White;
+            this.label144.BackColor = System.Drawing.Color.LightGreen;
             this.label144.Location = new System.Drawing.Point(50, 338);
             this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(2, 2);
+            this.label144.Size = new System.Drawing.Size(4, 4);
             this.label144.TabIndex = 287;
             // 
             // label145
             // 
-            this.label145.BackColor = System.Drawing.Color.White;
+            this.label145.BackColor = System.Drawing.Color.LightGreen;
             this.label145.Location = new System.Drawing.Point(42, 338);
             this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(2, 2);
+            this.label145.Size = new System.Drawing.Size(4, 4);
             this.label145.TabIndex = 286;
             // 
             // label146
             // 
-            this.label146.BackColor = System.Drawing.Color.White;
+            this.label146.BackColor = System.Drawing.Color.LightGreen;
             this.label146.Location = new System.Drawing.Point(35, 338);
             this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(2, 2);
+            this.label146.Size = new System.Drawing.Size(4, 4);
             this.label146.TabIndex = 285;
             // 
             // label147
             // 
-            this.label147.BackColor = System.Drawing.Color.White;
+            this.label147.BackColor = System.Drawing.Color.LightGreen;
             this.label147.Location = new System.Drawing.Point(59, 338);
             this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(2, 2);
+            this.label147.Size = new System.Drawing.Size(4, 4);
             this.label147.TabIndex = 284;
             // 
             // label148
             // 
-            this.label148.BackColor = System.Drawing.Color.White;
+            this.label148.BackColor = System.Drawing.Color.LightGreen;
             this.label148.Location = new System.Drawing.Point(59, 311);
             this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(2, 2);
+            this.label148.Size = new System.Drawing.Size(4, 4);
             this.label148.TabIndex = 283;
             // 
             // label149
             // 
-            this.label149.BackColor = System.Drawing.Color.White;
+            this.label149.BackColor = System.Drawing.Color.LightGreen;
             this.label149.Location = new System.Drawing.Point(59, 329);
             this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(2, 2);
+            this.label149.Size = new System.Drawing.Size(4, 4);
             this.label149.TabIndex = 282;
             // 
             // label150
             // 
-            this.label150.BackColor = System.Drawing.Color.White;
+            this.label150.BackColor = System.Drawing.Color.LightGreen;
             this.label150.Location = new System.Drawing.Point(59, 320);
             this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(2, 2);
+            this.label150.Size = new System.Drawing.Size(4, 4);
             this.label150.TabIndex = 281;
             // 
             // label151
             // 
-            this.label151.BackColor = System.Drawing.Color.White;
+            this.label151.BackColor = System.Drawing.Color.LightGreen;
             this.label151.Location = new System.Drawing.Point(68, 338);
             this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(2, 2);
+            this.label151.Size = new System.Drawing.Size(4, 4);
             this.label151.TabIndex = 280;
             // 
             // label152
             // 
-            this.label152.BackColor = System.Drawing.Color.White;
+            this.label152.BackColor = System.Drawing.Color.LightGreen;
             this.label152.Location = new System.Drawing.Point(94, 311);
             this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(2, 2);
+            this.label152.Size = new System.Drawing.Size(4, 4);
             this.label152.TabIndex = 279;
             // 
             // label153
             // 
-            this.label153.BackColor = System.Drawing.Color.White;
+            this.label153.BackColor = System.Drawing.Color.LightGreen;
             this.label153.Location = new System.Drawing.Point(94, 329);
             this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(2, 2);
+            this.label153.Size = new System.Drawing.Size(4, 4);
             this.label153.TabIndex = 278;
             // 
             // label154
             // 
-            this.label154.BackColor = System.Drawing.Color.White;
+            this.label154.BackColor = System.Drawing.Color.LightGreen;
             this.label154.Location = new System.Drawing.Point(94, 320);
             this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(2, 2);
+            this.label154.Size = new System.Drawing.Size(4, 4);
             this.label154.TabIndex = 277;
             // 
             // label155
             // 
-            this.label155.BackColor = System.Drawing.Color.White;
+            this.label155.BackColor = System.Drawing.Color.LightGreen;
             this.label155.Location = new System.Drawing.Point(129, 338);
             this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(2, 2);
+            this.label155.Size = new System.Drawing.Size(4, 4);
             this.label155.TabIndex = 276;
             // 
             // label156
             // 
-            this.label156.BackColor = System.Drawing.Color.White;
+            this.label156.BackColor = System.Drawing.Color.LightGreen;
             this.label156.Location = new System.Drawing.Point(94, 338);
             this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(2, 2);
+            this.label156.Size = new System.Drawing.Size(4, 4);
             this.label156.TabIndex = 275;
             // 
             // label157
             // 
-            this.label157.BackColor = System.Drawing.Color.White;
+            this.label157.BackColor = System.Drawing.Color.LightGreen;
             this.label157.Location = new System.Drawing.Point(85, 338);
             this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(2, 2);
+            this.label157.Size = new System.Drawing.Size(4, 4);
             this.label157.TabIndex = 274;
             // 
             // label158
             // 
-            this.label158.BackColor = System.Drawing.Color.White;
+            this.label158.BackColor = System.Drawing.Color.LightGreen;
             this.label158.Location = new System.Drawing.Point(76, 338);
             this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(2, 2);
+            this.label158.Size = new System.Drawing.Size(4, 4);
             this.label158.TabIndex = 273;
             // 
             // label159
             // 
-            this.label159.BackColor = System.Drawing.Color.White;
+            this.label159.BackColor = System.Drawing.Color.LightGreen;
             this.label159.Location = new System.Drawing.Point(129, 311);
             this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(2, 2);
+            this.label159.Size = new System.Drawing.Size(4, 4);
             this.label159.TabIndex = 272;
             // 
             // label160
             // 
-            this.label160.BackColor = System.Drawing.Color.White;
+            this.label160.BackColor = System.Drawing.Color.LightGreen;
             this.label160.Location = new System.Drawing.Point(138, 338);
             this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(2, 2);
+            this.label160.Size = new System.Drawing.Size(4, 4);
             this.label160.TabIndex = 271;
             // 
             // label161
             // 
-            this.label161.BackColor = System.Drawing.Color.White;
+            this.label161.BackColor = System.Drawing.Color.LightGreen;
             this.label161.Location = new System.Drawing.Point(129, 329);
             this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(2, 2);
+            this.label161.Size = new System.Drawing.Size(4, 4);
             this.label161.TabIndex = 270;
             // 
             // label162
             // 
-            this.label162.BackColor = System.Drawing.Color.White;
+            this.label162.BackColor = System.Drawing.Color.LightGreen;
             this.label162.Location = new System.Drawing.Point(129, 320);
             this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(2, 2);
+            this.label162.Size = new System.Drawing.Size(4, 4);
             this.label162.TabIndex = 269;
             // 
             // label163
             // 
-            this.label163.BackColor = System.Drawing.Color.White;
+            this.label163.BackColor = System.Drawing.Color.LightGreen;
             this.label163.Location = new System.Drawing.Point(192, 374);
             this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(2, 2);
+            this.label163.Size = new System.Drawing.Size(4, 4);
             this.label163.TabIndex = 315;
             // 
             // label164
             // 
-            this.label164.BackColor = System.Drawing.Color.White;
+            this.label164.BackColor = System.Drawing.Color.LightGreen;
             this.label164.Location = new System.Drawing.Point(183, 374);
             this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(2, 2);
+            this.label164.Size = new System.Drawing.Size(4, 4);
             this.label164.TabIndex = 314;
             // 
             // label165
             // 
-            this.label165.BackColor = System.Drawing.Color.White;
+            this.label165.BackColor = System.Drawing.Color.LightGreen;
             this.label165.Location = new System.Drawing.Point(174, 374);
             this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(2, 2);
+            this.label165.Size = new System.Drawing.Size(4, 4);
             this.label165.TabIndex = 313;
             // 
             // label166
             // 
-            this.label166.BackColor = System.Drawing.Color.White;
+            this.label166.BackColor = System.Drawing.Color.LightGreen;
             this.label166.Location = new System.Drawing.Point(35, 293);
             this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(2, 2);
+            this.label166.Size = new System.Drawing.Size(4, 4);
             this.label166.TabIndex = 318;
             // 
             // label167
             // 
-            this.label167.BackColor = System.Drawing.Color.White;
+            this.label167.BackColor = System.Drawing.Color.LightGreen;
             this.label167.Location = new System.Drawing.Point(35, 284);
             this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(2, 2);
+            this.label167.Size = new System.Drawing.Size(4, 4);
             this.label167.TabIndex = 317;
             // 
             // label168
             // 
-            this.label168.BackColor = System.Drawing.Color.White;
+            this.label168.BackColor = System.Drawing.Color.LightGreen;
             this.label168.Location = new System.Drawing.Point(35, 275);
             this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(2, 2);
+            this.label168.Size = new System.Drawing.Size(4, 4);
             this.label168.TabIndex = 316;
             // 
             // label169
             // 
-            this.label169.BackColor = System.Drawing.Color.White;
+            this.label169.BackColor = System.Drawing.Color.LightGreen;
             this.label169.Location = new System.Drawing.Point(86, 266);
             this.label169.Name = "label169";
-            this.label169.Size = new System.Drawing.Size(2, 2);
+            this.label169.Size = new System.Drawing.Size(4, 4);
             this.label169.TabIndex = 319;
             // 
             // label170
             // 
-            this.label170.BackColor = System.Drawing.Color.White;
+            this.label170.BackColor = System.Drawing.Color.LightGreen;
             this.label170.Location = new System.Drawing.Point(59, 302);
             this.label170.Name = "label170";
-            this.label170.Size = new System.Drawing.Size(2, 2);
+            this.label170.Size = new System.Drawing.Size(4, 4);
             this.label170.TabIndex = 323;
             // 
             // label171
             // 
-            this.label171.BackColor = System.Drawing.Color.White;
+            this.label171.BackColor = System.Drawing.Color.LightGreen;
             this.label171.Location = new System.Drawing.Point(51, 302);
             this.label171.Name = "label171";
-            this.label171.Size = new System.Drawing.Size(2, 2);
+            this.label171.Size = new System.Drawing.Size(4, 4);
             this.label171.TabIndex = 322;
             // 
             // label172
             // 
-            this.label172.BackColor = System.Drawing.Color.White;
+            this.label172.BackColor = System.Drawing.Color.LightGreen;
             this.label172.Location = new System.Drawing.Point(43, 302);
             this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(2, 2);
+            this.label172.Size = new System.Drawing.Size(4, 4);
             this.label172.TabIndex = 321;
             // 
             // label173
@@ -1890,370 +1902,370 @@ namespace Pacman_Zagorschi_Franco
             // 
             // label174
             // 
-            this.label174.BackColor = System.Drawing.Color.White;
+            this.label174.BackColor = System.Drawing.Color.LightGreen;
             this.label174.Location = new System.Drawing.Point(274, 230);
             this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(2, 2);
+            this.label174.Size = new System.Drawing.Size(4, 4);
             this.label174.TabIndex = 333;
             // 
             // label175
             // 
-            this.label175.BackColor = System.Drawing.Color.White;
+            this.label175.BackColor = System.Drawing.Color.LightGreen;
             this.label175.Location = new System.Drawing.Point(274, 248);
             this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(2, 2);
+            this.label175.Size = new System.Drawing.Size(4, 4);
             this.label175.TabIndex = 332;
             // 
             // label176
             // 
-            this.label176.BackColor = System.Drawing.Color.White;
+            this.label176.BackColor = System.Drawing.Color.LightGreen;
             this.label176.Location = new System.Drawing.Point(274, 239);
             this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(2, 2);
+            this.label176.Size = new System.Drawing.Size(4, 4);
             this.label176.TabIndex = 331;
             // 
             // label177
             // 
-            this.label177.BackColor = System.Drawing.Color.White;
+            this.label177.BackColor = System.Drawing.Color.LightGreen;
             this.label177.Location = new System.Drawing.Point(274, 257);
             this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(2, 2);
+            this.label177.Size = new System.Drawing.Size(4, 4);
             this.label177.TabIndex = 330;
             // 
             // label178
             // 
-            this.label178.BackColor = System.Drawing.Color.White;
+            this.label178.BackColor = System.Drawing.Color.LightGreen;
             this.label178.Location = new System.Drawing.Point(274, 212);
             this.label178.Name = "label178";
-            this.label178.Size = new System.Drawing.Size(2, 2);
+            this.label178.Size = new System.Drawing.Size(4, 4);
             this.label178.TabIndex = 329;
             // 
             // label179
             // 
-            this.label179.BackColor = System.Drawing.Color.White;
+            this.label179.BackColor = System.Drawing.Color.LightGreen;
             this.label179.Location = new System.Drawing.Point(274, 203);
             this.label179.Name = "label179";
-            this.label179.Size = new System.Drawing.Size(2, 2);
+            this.label179.Size = new System.Drawing.Size(4, 4);
             this.label179.TabIndex = 328;
             // 
             // label180
             // 
-            this.label180.BackColor = System.Drawing.Color.White;
+            this.label180.BackColor = System.Drawing.Color.LightGreen;
             this.label180.Location = new System.Drawing.Point(274, 194);
             this.label180.Name = "label180";
-            this.label180.Size = new System.Drawing.Size(2, 2);
+            this.label180.Size = new System.Drawing.Size(4, 4);
             this.label180.TabIndex = 327;
             // 
             // label181
             // 
-            this.label181.BackColor = System.Drawing.Color.White;
+            this.label181.BackColor = System.Drawing.Color.LightGreen;
             this.label181.Location = new System.Drawing.Point(274, 221);
             this.label181.Name = "label181";
-            this.label181.Size = new System.Drawing.Size(2, 2);
+            this.label181.Size = new System.Drawing.Size(4, 4);
             this.label181.TabIndex = 326;
             // 
             // label182
             // 
-            this.label182.BackColor = System.Drawing.Color.White;
+            this.label182.BackColor = System.Drawing.Color.LightGreen;
             this.label182.Location = new System.Drawing.Point(274, 185);
             this.label182.Name = "label182";
-            this.label182.Size = new System.Drawing.Size(2, 2);
+            this.label182.Size = new System.Drawing.Size(4, 4);
             this.label182.TabIndex = 325;
             // 
             // label183
             // 
-            this.label183.BackColor = System.Drawing.Color.White;
+            this.label183.BackColor = System.Drawing.Color.LightGreen;
             this.label183.Location = new System.Drawing.Point(274, 149);
             this.label183.Name = "label183";
-            this.label183.Size = new System.Drawing.Size(2, 2);
+            this.label183.Size = new System.Drawing.Size(4, 4);
             this.label183.TabIndex = 342;
             // 
             // label184
             // 
-            this.label184.BackColor = System.Drawing.Color.White;
+            this.label184.BackColor = System.Drawing.Color.LightGreen;
             this.label184.Location = new System.Drawing.Point(274, 167);
             this.label184.Name = "label184";
-            this.label184.Size = new System.Drawing.Size(2, 2);
+            this.label184.Size = new System.Drawing.Size(4, 4);
             this.label184.TabIndex = 341;
             // 
             // label185
             // 
-            this.label185.BackColor = System.Drawing.Color.White;
+            this.label185.BackColor = System.Drawing.Color.LightGreen;
             this.label185.Location = new System.Drawing.Point(274, 158);
             this.label185.Name = "label185";
-            this.label185.Size = new System.Drawing.Size(2, 2);
+            this.label185.Size = new System.Drawing.Size(4, 4);
             this.label185.TabIndex = 340;
             // 
             // label186
             // 
-            this.label186.BackColor = System.Drawing.Color.White;
+            this.label186.BackColor = System.Drawing.Color.LightGreen;
             this.label186.Location = new System.Drawing.Point(274, 176);
             this.label186.Name = "label186";
-            this.label186.Size = new System.Drawing.Size(2, 2);
+            this.label186.Size = new System.Drawing.Size(4, 4);
             this.label186.TabIndex = 339;
             // 
             // label187
             // 
-            this.label187.BackColor = System.Drawing.Color.White;
+            this.label187.BackColor = System.Drawing.Color.LightGreen;
             this.label187.Location = new System.Drawing.Point(274, 131);
             this.label187.Name = "label187";
-            this.label187.Size = new System.Drawing.Size(2, 2);
+            this.label187.Size = new System.Drawing.Size(4, 4);
             this.label187.TabIndex = 338;
             // 
             // label188
             // 
-            this.label188.BackColor = System.Drawing.Color.White;
+            this.label188.BackColor = System.Drawing.Color.LightGreen;
             this.label188.Location = new System.Drawing.Point(274, 122);
             this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(2, 2);
+            this.label188.Size = new System.Drawing.Size(4, 4);
             this.label188.TabIndex = 337;
             // 
             // label189
             // 
-            this.label189.BackColor = System.Drawing.Color.White;
+            this.label189.BackColor = System.Drawing.Color.LightGreen;
             this.label189.Location = new System.Drawing.Point(274, 113);
             this.label189.Name = "label189";
-            this.label189.Size = new System.Drawing.Size(2, 2);
+            this.label189.Size = new System.Drawing.Size(4, 4);
             this.label189.TabIndex = 336;
             // 
             // label190
             // 
-            this.label190.BackColor = System.Drawing.Color.White;
+            this.label190.BackColor = System.Drawing.Color.LightGreen;
             this.label190.Location = new System.Drawing.Point(274, 140);
             this.label190.Name = "label190";
-            this.label190.Size = new System.Drawing.Size(2, 2);
+            this.label190.Size = new System.Drawing.Size(4, 4);
             this.label190.TabIndex = 335;
             // 
             // label191
             // 
-            this.label191.BackColor = System.Drawing.Color.White;
+            this.label191.BackColor = System.Drawing.Color.LightGreen;
             this.label191.Location = new System.Drawing.Point(274, 104);
             this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(2, 2);
+            this.label191.Size = new System.Drawing.Size(4, 4);
             this.label191.TabIndex = 334;
             // 
             // label192
             // 
-            this.label192.BackColor = System.Drawing.Color.White;
+            this.label192.BackColor = System.Drawing.Color.LightGreen;
             this.label192.Location = new System.Drawing.Point(274, 66);
             this.label192.Name = "label192";
-            this.label192.Size = new System.Drawing.Size(2, 2);
+            this.label192.Size = new System.Drawing.Size(4, 4);
             this.label192.TabIndex = 351;
             // 
             // label193
             // 
-            this.label193.BackColor = System.Drawing.Color.White;
+            this.label193.BackColor = System.Drawing.Color.LightGreen;
             this.label193.Location = new System.Drawing.Point(274, 85);
             this.label193.Name = "label193";
-            this.label193.Size = new System.Drawing.Size(2, 2);
+            this.label193.Size = new System.Drawing.Size(4, 4);
             this.label193.TabIndex = 350;
             // 
             // label194
             // 
-            this.label194.BackColor = System.Drawing.Color.White;
+            this.label194.BackColor = System.Drawing.Color.LightGreen;
             this.label194.Location = new System.Drawing.Point(274, 76);
             this.label194.Name = "label194";
-            this.label194.Size = new System.Drawing.Size(2, 2);
+            this.label194.Size = new System.Drawing.Size(4, 4);
             this.label194.TabIndex = 349;
             // 
             // label195
             // 
-            this.label195.BackColor = System.Drawing.Color.White;
+            this.label195.BackColor = System.Drawing.Color.LightGreen;
             this.label195.Location = new System.Drawing.Point(274, 94);
             this.label195.Name = "label195";
-            this.label195.Size = new System.Drawing.Size(2, 2);
+            this.label195.Size = new System.Drawing.Size(4, 4);
             this.label195.TabIndex = 348;
             // 
             // label196
             // 
-            this.label196.BackColor = System.Drawing.Color.White;
+            this.label196.BackColor = System.Drawing.Color.LightGreen;
             this.label196.Location = new System.Drawing.Point(274, 47);
             this.label196.Name = "label196";
-            this.label196.Size = new System.Drawing.Size(2, 2);
+            this.label196.Size = new System.Drawing.Size(4, 4);
             this.label196.TabIndex = 347;
             // 
             // label199
             // 
-            this.label199.BackColor = System.Drawing.Color.White;
+            this.label199.BackColor = System.Drawing.Color.LightGreen;
             this.label199.Location = new System.Drawing.Point(274, 57);
             this.label199.Name = "label199";
-            this.label199.Size = new System.Drawing.Size(2, 2);
+            this.label199.Size = new System.Drawing.Size(4, 4);
             this.label199.TabIndex = 344;
             // 
             // label198
             // 
-            this.label198.BackColor = System.Drawing.Color.White;
+            this.label198.BackColor = System.Drawing.Color.LightGreen;
             this.label198.Location = new System.Drawing.Point(334, 38);
             this.label198.Name = "label198";
-            this.label198.Size = new System.Drawing.Size(2, 2);
+            this.label198.Size = new System.Drawing.Size(4, 4);
             this.label198.TabIndex = 367;
             // 
             // label200
             // 
-            this.label200.BackColor = System.Drawing.Color.White;
+            this.label200.BackColor = System.Drawing.Color.LightGreen;
             this.label200.Location = new System.Drawing.Point(326, 38);
             this.label200.Name = "label200";
-            this.label200.Size = new System.Drawing.Size(2, 2);
+            this.label200.Size = new System.Drawing.Size(4, 4);
             this.label200.TabIndex = 366;
             // 
             // label201
             // 
-            this.label201.BackColor = System.Drawing.Color.White;
+            this.label201.BackColor = System.Drawing.Color.LightGreen;
             this.label201.Location = new System.Drawing.Point(247, 38);
             this.label201.Name = "label201";
-            this.label201.Size = new System.Drawing.Size(2, 2);
+            this.label201.Size = new System.Drawing.Size(4, 4);
             this.label201.TabIndex = 365;
             // 
             // label202
             // 
-            this.label202.BackColor = System.Drawing.Color.White;
+            this.label202.BackColor = System.Drawing.Color.LightGreen;
             this.label202.Location = new System.Drawing.Point(238, 38);
             this.label202.Name = "label202";
-            this.label202.Size = new System.Drawing.Size(2, 2);
+            this.label202.Size = new System.Drawing.Size(4, 4);
             this.label202.TabIndex = 364;
             // 
             // label203
             // 
-            this.label203.BackColor = System.Drawing.Color.White;
+            this.label203.BackColor = System.Drawing.Color.LightGreen;
             this.label203.Location = new System.Drawing.Point(229, 38);
             this.label203.Name = "label203";
-            this.label203.Size = new System.Drawing.Size(2, 2);
+            this.label203.Size = new System.Drawing.Size(4, 4);
             this.label203.TabIndex = 363;
             // 
             // label204
             // 
-            this.label204.BackColor = System.Drawing.Color.White;
+            this.label204.BackColor = System.Drawing.Color.LightGreen;
             this.label204.Location = new System.Drawing.Point(220, 38);
             this.label204.Name = "label204";
-            this.label204.Size = new System.Drawing.Size(2, 2);
+            this.label204.Size = new System.Drawing.Size(4, 4);
             this.label204.TabIndex = 362;
             // 
             // label205
             // 
-            this.label205.BackColor = System.Drawing.Color.White;
+            this.label205.BackColor = System.Drawing.Color.LightGreen;
             this.label205.Location = new System.Drawing.Point(211, 38);
             this.label205.Name = "label205";
-            this.label205.Size = new System.Drawing.Size(2, 2);
+            this.label205.Size = new System.Drawing.Size(4, 4);
             this.label205.TabIndex = 361;
             // 
             // label206
             // 
-            this.label206.BackColor = System.Drawing.Color.White;
+            this.label206.BackColor = System.Drawing.Color.LightGreen;
             this.label206.Location = new System.Drawing.Point(202, 38);
             this.label206.Name = "label206";
-            this.label206.Size = new System.Drawing.Size(2, 2);
+            this.label206.Size = new System.Drawing.Size(4, 4);
             this.label206.TabIndex = 360;
             // 
             // label207
             // 
-            this.label207.BackColor = System.Drawing.Color.White;
+            this.label207.BackColor = System.Drawing.Color.LightGreen;
             this.label207.Location = new System.Drawing.Point(318, 38);
             this.label207.Name = "label207";
-            this.label207.Size = new System.Drawing.Size(2, 2);
+            this.label207.Size = new System.Drawing.Size(4, 4);
             this.label207.TabIndex = 359;
             // 
             // label208
             // 
-            this.label208.BackColor = System.Drawing.Color.White;
+            this.label208.BackColor = System.Drawing.Color.LightGreen;
             this.label208.Location = new System.Drawing.Point(310, 38);
             this.label208.Name = "label208";
-            this.label208.Size = new System.Drawing.Size(2, 2);
+            this.label208.Size = new System.Drawing.Size(4, 4);
             this.label208.TabIndex = 358;
             // 
             // label209
             // 
-            this.label209.BackColor = System.Drawing.Color.White;
+            this.label209.BackColor = System.Drawing.Color.LightGreen;
             this.label209.Location = new System.Drawing.Point(301, 38);
             this.label209.Name = "label209";
-            this.label209.Size = new System.Drawing.Size(2, 2);
+            this.label209.Size = new System.Drawing.Size(4, 4);
             this.label209.TabIndex = 357;
             // 
             // label210
             // 
-            this.label210.BackColor = System.Drawing.Color.White;
+            this.label210.BackColor = System.Drawing.Color.LightGreen;
             this.label210.Location = new System.Drawing.Point(292, 38);
             this.label210.Name = "label210";
-            this.label210.Size = new System.Drawing.Size(2, 2);
+            this.label210.Size = new System.Drawing.Size(4, 4);
             this.label210.TabIndex = 356;
             // 
             // label211
             // 
-            this.label211.BackColor = System.Drawing.Color.White;
+            this.label211.BackColor = System.Drawing.Color.LightGreen;
             this.label211.Location = new System.Drawing.Point(283, 38);
             this.label211.Name = "label211";
-            this.label211.Size = new System.Drawing.Size(2, 2);
+            this.label211.Size = new System.Drawing.Size(4, 4);
             this.label211.TabIndex = 355;
             // 
             // label212
             // 
-            this.label212.BackColor = System.Drawing.Color.White;
+            this.label212.BackColor = System.Drawing.Color.LightGreen;
             this.label212.Location = new System.Drawing.Point(274, 38);
             this.label212.Name = "label212";
-            this.label212.Size = new System.Drawing.Size(2, 2);
+            this.label212.Size = new System.Drawing.Size(4, 4);
             this.label212.TabIndex = 354;
             // 
             // label213
             // 
-            this.label213.BackColor = System.Drawing.Color.White;
+            this.label213.BackColor = System.Drawing.Color.LightGreen;
             this.label213.Location = new System.Drawing.Point(265, 38);
             this.label213.Name = "label213";
-            this.label213.Size = new System.Drawing.Size(2, 2);
+            this.label213.Size = new System.Drawing.Size(4, 4);
             this.label213.TabIndex = 353;
             // 
             // label214
             // 
-            this.label214.BackColor = System.Drawing.Color.White;
+            this.label214.BackColor = System.Drawing.Color.LightGreen;
             this.label214.Location = new System.Drawing.Point(256, 38);
             this.label214.Name = "label214";
-            this.label214.Size = new System.Drawing.Size(2, 2);
+            this.label214.Size = new System.Drawing.Size(4, 4);
             this.label214.TabIndex = 352;
             // 
             // label197
             // 
-            this.label197.BackColor = System.Drawing.Color.White;
+            this.label197.BackColor = System.Drawing.Color.LightGreen;
             this.label197.Location = new System.Drawing.Point(334, 94);
             this.label197.Name = "label197";
-            this.label197.Size = new System.Drawing.Size(2, 2);
+            this.label197.Size = new System.Drawing.Size(4, 4);
             this.label197.TabIndex = 376;
             // 
             // label215
             // 
-            this.label215.BackColor = System.Drawing.Color.White;
+            this.label215.BackColor = System.Drawing.Color.LightGreen;
             this.label215.Location = new System.Drawing.Point(334, 113);
             this.label215.Name = "label215";
-            this.label215.Size = new System.Drawing.Size(2, 2);
+            this.label215.Size = new System.Drawing.Size(4, 4);
             this.label215.TabIndex = 375;
             // 
             // label216
             // 
-            this.label216.BackColor = System.Drawing.Color.White;
+            this.label216.BackColor = System.Drawing.Color.LightGreen;
             this.label216.Location = new System.Drawing.Point(334, 104);
             this.label216.Name = "label216";
-            this.label216.Size = new System.Drawing.Size(2, 2);
+            this.label216.Size = new System.Drawing.Size(4, 4);
             this.label216.TabIndex = 374;
             // 
             // label217
             // 
-            this.label217.BackColor = System.Drawing.Color.White;
+            this.label217.BackColor = System.Drawing.Color.LightGreen;
             this.label217.Location = new System.Drawing.Point(334, 122);
             this.label217.Name = "label217";
-            this.label217.Size = new System.Drawing.Size(2, 2);
+            this.label217.Size = new System.Drawing.Size(4, 4);
             this.label217.TabIndex = 373;
             // 
             // label218
             // 
-            this.label218.BackColor = System.Drawing.Color.White;
+            this.label218.BackColor = System.Drawing.Color.LightGreen;
             this.label218.Location = new System.Drawing.Point(334, 76);
             this.label218.Name = "label218";
-            this.label218.Size = new System.Drawing.Size(2, 2);
+            this.label218.Size = new System.Drawing.Size(4, 4);
             this.label218.TabIndex = 372;
             // 
             // label219
             // 
-            this.label219.BackColor = System.Drawing.Color.White;
+            this.label219.BackColor = System.Drawing.Color.LightGreen;
             this.label219.Location = new System.Drawing.Point(334, 67);
             this.label219.Name = "label219";
-            this.label219.Size = new System.Drawing.Size(2, 2);
+            this.label219.Size = new System.Drawing.Size(4, 4);
             this.label219.TabIndex = 371;
             // 
             // label220
@@ -2267,666 +2279,666 @@ namespace Pacman_Zagorschi_Franco
             // 
             // label221
             // 
-            this.label221.BackColor = System.Drawing.Color.White;
+            this.label221.BackColor = System.Drawing.Color.LightGreen;
             this.label221.Location = new System.Drawing.Point(334, 85);
             this.label221.Name = "label221";
-            this.label221.Size = new System.Drawing.Size(2, 2);
+            this.label221.Size = new System.Drawing.Size(4, 4);
             this.label221.TabIndex = 369;
             // 
             // label222
             // 
-            this.label222.BackColor = System.Drawing.Color.White;
+            this.label222.BackColor = System.Drawing.Color.LightGreen;
             this.label222.Location = new System.Drawing.Point(334, 48);
             this.label222.Name = "label222";
-            this.label222.Size = new System.Drawing.Size(2, 2);
+            this.label222.Size = new System.Drawing.Size(4, 4);
             this.label222.TabIndex = 368;
             // 
             // label223
             // 
-            this.label223.BackColor = System.Drawing.Color.White;
+            this.label223.BackColor = System.Drawing.Color.LightGreen;
             this.label223.Location = new System.Drawing.Point(326, 85);
             this.label223.Name = "label223";
-            this.label223.Size = new System.Drawing.Size(2, 2);
+            this.label223.Size = new System.Drawing.Size(4, 4);
             this.label223.TabIndex = 382;
             // 
             // label224
             // 
-            this.label224.BackColor = System.Drawing.Color.White;
+            this.label224.BackColor = System.Drawing.Color.LightGreen;
             this.label224.Location = new System.Drawing.Point(318, 85);
             this.label224.Name = "label224";
-            this.label224.Size = new System.Drawing.Size(2, 2);
+            this.label224.Size = new System.Drawing.Size(4, 4);
             this.label224.TabIndex = 381;
             // 
             // label225
             // 
-            this.label225.BackColor = System.Drawing.Color.White;
+            this.label225.BackColor = System.Drawing.Color.LightGreen;
             this.label225.Location = new System.Drawing.Point(310, 85);
             this.label225.Name = "label225";
-            this.label225.Size = new System.Drawing.Size(2, 2);
+            this.label225.Size = new System.Drawing.Size(4, 4);
             this.label225.TabIndex = 380;
             // 
             // label226
             // 
-            this.label226.BackColor = System.Drawing.Color.White;
+            this.label226.BackColor = System.Drawing.Color.LightGreen;
             this.label226.Location = new System.Drawing.Point(301, 85);
             this.label226.Name = "label226";
-            this.label226.Size = new System.Drawing.Size(2, 2);
+            this.label226.Size = new System.Drawing.Size(4, 4);
             this.label226.TabIndex = 379;
             // 
             // label227
             // 
-            this.label227.BackColor = System.Drawing.Color.White;
+            this.label227.BackColor = System.Drawing.Color.LightGreen;
             this.label227.Location = new System.Drawing.Point(292, 85);
             this.label227.Name = "label227";
-            this.label227.Size = new System.Drawing.Size(2, 2);
+            this.label227.Size = new System.Drawing.Size(4, 4);
             this.label227.TabIndex = 378;
             // 
             // label228
             // 
-            this.label228.BackColor = System.Drawing.Color.White;
+            this.label228.BackColor = System.Drawing.Color.LightGreen;
             this.label228.Location = new System.Drawing.Point(283, 85);
             this.label228.Name = "label228";
-            this.label228.Size = new System.Drawing.Size(2, 2);
+            this.label228.Size = new System.Drawing.Size(4, 4);
             this.label228.TabIndex = 377;
             // 
             // label229
             // 
-            this.label229.BackColor = System.Drawing.Color.White;
+            this.label229.BackColor = System.Drawing.Color.LightGreen;
             this.label229.Location = new System.Drawing.Point(326, 122);
             this.label229.Name = "label229";
-            this.label229.Size = new System.Drawing.Size(2, 2);
+            this.label229.Size = new System.Drawing.Size(4, 4);
             this.label229.TabIndex = 388;
             // 
             // label230
             // 
-            this.label230.BackColor = System.Drawing.Color.White;
+            this.label230.BackColor = System.Drawing.Color.LightGreen;
             this.label230.Location = new System.Drawing.Point(318, 122);
             this.label230.Name = "label230";
-            this.label230.Size = new System.Drawing.Size(2, 2);
+            this.label230.Size = new System.Drawing.Size(4, 4);
             this.label230.TabIndex = 387;
             // 
             // label231
             // 
-            this.label231.BackColor = System.Drawing.Color.White;
+            this.label231.BackColor = System.Drawing.Color.LightGreen;
             this.label231.Location = new System.Drawing.Point(310, 122);
             this.label231.Name = "label231";
-            this.label231.Size = new System.Drawing.Size(2, 2);
+            this.label231.Size = new System.Drawing.Size(4, 4);
             this.label231.TabIndex = 386;
             // 
             // label232
             // 
-            this.label232.BackColor = System.Drawing.Color.White;
+            this.label232.BackColor = System.Drawing.Color.LightGreen;
             this.label232.Location = new System.Drawing.Point(301, 122);
             this.label232.Name = "label232";
-            this.label232.Size = new System.Drawing.Size(2, 2);
+            this.label232.Size = new System.Drawing.Size(4, 4);
             this.label232.TabIndex = 385;
             // 
             // label233
             // 
-            this.label233.BackColor = System.Drawing.Color.White;
+            this.label233.BackColor = System.Drawing.Color.LightGreen;
             this.label233.Location = new System.Drawing.Point(292, 122);
             this.label233.Name = "label233";
-            this.label233.Size = new System.Drawing.Size(2, 2);
+            this.label233.Size = new System.Drawing.Size(4, 4);
             this.label233.TabIndex = 384;
             // 
             // label234
             // 
-            this.label234.BackColor = System.Drawing.Color.White;
+            this.label234.BackColor = System.Drawing.Color.LightGreen;
             this.label234.Location = new System.Drawing.Point(283, 122);
             this.label234.Name = "label234";
-            this.label234.Size = new System.Drawing.Size(2, 2);
+            this.label234.Size = new System.Drawing.Size(4, 4);
             this.label234.TabIndex = 383;
             // 
             // label235
             // 
-            this.label235.BackColor = System.Drawing.Color.White;
+            this.label235.BackColor = System.Drawing.Color.LightGreen;
             this.label235.Location = new System.Drawing.Point(247, 85);
             this.label235.Name = "label235";
-            this.label235.Size = new System.Drawing.Size(2, 2);
+            this.label235.Size = new System.Drawing.Size(4, 4);
             this.label235.TabIndex = 396;
             // 
             // label236
             // 
-            this.label236.BackColor = System.Drawing.Color.White;
+            this.label236.BackColor = System.Drawing.Color.LightGreen;
             this.label236.Location = new System.Drawing.Point(238, 85);
             this.label236.Name = "label236";
-            this.label236.Size = new System.Drawing.Size(2, 2);
+            this.label236.Size = new System.Drawing.Size(4, 4);
             this.label236.TabIndex = 395;
             // 
             // label237
             // 
-            this.label237.BackColor = System.Drawing.Color.White;
+            this.label237.BackColor = System.Drawing.Color.LightGreen;
             this.label237.Location = new System.Drawing.Point(229, 85);
             this.label237.Name = "label237";
-            this.label237.Size = new System.Drawing.Size(2, 2);
+            this.label237.Size = new System.Drawing.Size(4, 4);
             this.label237.TabIndex = 394;
             // 
             // label238
             // 
-            this.label238.BackColor = System.Drawing.Color.White;
+            this.label238.BackColor = System.Drawing.Color.LightGreen;
             this.label238.Location = new System.Drawing.Point(220, 85);
             this.label238.Name = "label238";
-            this.label238.Size = new System.Drawing.Size(2, 2);
+            this.label238.Size = new System.Drawing.Size(4, 4);
             this.label238.TabIndex = 393;
             // 
             // label239
             // 
-            this.label239.BackColor = System.Drawing.Color.White;
+            this.label239.BackColor = System.Drawing.Color.LightGreen;
             this.label239.Location = new System.Drawing.Point(211, 85);
             this.label239.Name = "label239";
-            this.label239.Size = new System.Drawing.Size(2, 2);
+            this.label239.Size = new System.Drawing.Size(4, 4);
             this.label239.TabIndex = 392;
             // 
             // label240
             // 
-            this.label240.BackColor = System.Drawing.Color.White;
+            this.label240.BackColor = System.Drawing.Color.LightGreen;
             this.label240.Location = new System.Drawing.Point(202, 85);
             this.label240.Name = "label240";
-            this.label240.Size = new System.Drawing.Size(2, 2);
+            this.label240.Size = new System.Drawing.Size(4, 4);
             this.label240.TabIndex = 391;
             // 
             // label241
             // 
-            this.label241.BackColor = System.Drawing.Color.White;
+            this.label241.BackColor = System.Drawing.Color.LightGreen;
             this.label241.Location = new System.Drawing.Point(265, 85);
             this.label241.Name = "label241";
-            this.label241.Size = new System.Drawing.Size(2, 2);
+            this.label241.Size = new System.Drawing.Size(4, 4);
             this.label241.TabIndex = 390;
             // 
             // label242
             // 
-            this.label242.BackColor = System.Drawing.Color.White;
+            this.label242.BackColor = System.Drawing.Color.LightGreen;
             this.label242.Location = new System.Drawing.Point(256, 85);
             this.label242.Name = "label242";
-            this.label242.Size = new System.Drawing.Size(2, 2);
+            this.label242.Size = new System.Drawing.Size(4, 4);
             this.label242.TabIndex = 389;
             // 
             // label243
             // 
-            this.label243.BackColor = System.Drawing.Color.White;
+            this.label243.BackColor = System.Drawing.Color.LightGreen;
             this.label243.Location = new System.Drawing.Point(202, 66);
             this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(2, 2);
+            this.label243.Size = new System.Drawing.Size(4, 4);
             this.label243.TabIndex = 400;
             // 
             // label244
             // 
-            this.label244.BackColor = System.Drawing.Color.White;
+            this.label244.BackColor = System.Drawing.Color.LightGreen;
             this.label244.Location = new System.Drawing.Point(202, 76);
             this.label244.Name = "label244";
-            this.label244.Size = new System.Drawing.Size(2, 2);
+            this.label244.Size = new System.Drawing.Size(4, 4);
             this.label244.TabIndex = 399;
             // 
             // label245
             // 
-            this.label245.BackColor = System.Drawing.Color.White;
+            this.label245.BackColor = System.Drawing.Color.LightGreen;
             this.label245.Location = new System.Drawing.Point(202, 47);
             this.label245.Name = "label245";
-            this.label245.Size = new System.Drawing.Size(2, 2);
+            this.label245.Size = new System.Drawing.Size(4, 4);
             this.label245.TabIndex = 398;
             // 
             // label246
             // 
-            this.label246.BackColor = System.Drawing.Color.White;
+            this.label246.BackColor = System.Drawing.Color.LightGreen;
             this.label246.Location = new System.Drawing.Point(202, 57);
             this.label246.Name = "label246";
-            this.label246.Size = new System.Drawing.Size(2, 2);
+            this.label246.Size = new System.Drawing.Size(4, 4);
             this.label246.TabIndex = 397;
             // 
             // label247
             // 
-            this.label247.BackColor = System.Drawing.Color.White;
+            this.label247.BackColor = System.Drawing.Color.LightGreen;
             this.label247.Location = new System.Drawing.Point(129, 94);
             this.label247.Name = "label247";
-            this.label247.Size = new System.Drawing.Size(2, 2);
+            this.label247.Size = new System.Drawing.Size(4, 4);
             this.label247.TabIndex = 419;
             // 
             // label248
             // 
-            this.label248.BackColor = System.Drawing.Color.White;
+            this.label248.BackColor = System.Drawing.Color.LightGreen;
             this.label248.Location = new System.Drawing.Point(129, 112);
             this.label248.Name = "label248";
-            this.label248.Size = new System.Drawing.Size(2, 2);
+            this.label248.Size = new System.Drawing.Size(4, 4);
             this.label248.TabIndex = 418;
             // 
             // label249
             // 
-            this.label249.BackColor = System.Drawing.Color.White;
+            this.label249.BackColor = System.Drawing.Color.LightGreen;
             this.label249.Location = new System.Drawing.Point(129, 103);
             this.label249.Name = "label249";
-            this.label249.Size = new System.Drawing.Size(2, 2);
+            this.label249.Size = new System.Drawing.Size(4, 4);
             this.label249.TabIndex = 417;
             // 
             // label250
             // 
-            this.label250.BackColor = System.Drawing.Color.White;
+            this.label250.BackColor = System.Drawing.Color.LightGreen;
             this.label250.Location = new System.Drawing.Point(238, 94);
             this.label250.Name = "label250";
-            this.label250.Size = new System.Drawing.Size(2, 2);
+            this.label250.Size = new System.Drawing.Size(4, 4);
             this.label250.TabIndex = 416;
             // 
             // label251
             // 
-            this.label251.BackColor = System.Drawing.Color.White;
+            this.label251.BackColor = System.Drawing.Color.LightGreen;
             this.label251.Location = new System.Drawing.Point(238, 112);
             this.label251.Name = "label251";
-            this.label251.Size = new System.Drawing.Size(2, 2);
+            this.label251.Size = new System.Drawing.Size(4, 4);
             this.label251.TabIndex = 415;
             // 
             // label252
             // 
-            this.label252.BackColor = System.Drawing.Color.White;
+            this.label252.BackColor = System.Drawing.Color.LightGreen;
             this.label252.Location = new System.Drawing.Point(238, 103);
             this.label252.Name = "label252";
-            this.label252.Size = new System.Drawing.Size(2, 2);
+            this.label252.Size = new System.Drawing.Size(4, 4);
             this.label252.TabIndex = 414;
             // 
             // label256
             // 
-            this.label256.BackColor = System.Drawing.Color.White;
+            this.label256.BackColor = System.Drawing.Color.LightGreen;
             this.label256.Location = new System.Drawing.Point(202, 122);
             this.label256.Name = "label256";
-            this.label256.Size = new System.Drawing.Size(2, 2);
+            this.label256.Size = new System.Drawing.Size(4, 4);
             this.label256.TabIndex = 410;
             // 
             // label257
             // 
-            this.label257.BackColor = System.Drawing.Color.White;
+            this.label257.BackColor = System.Drawing.Color.LightGreen;
             this.label257.Location = new System.Drawing.Point(238, 122);
             this.label257.Name = "label257";
-            this.label257.Size = new System.Drawing.Size(2, 2);
+            this.label257.Size = new System.Drawing.Size(4, 4);
             this.label257.TabIndex = 409;
             // 
             // label258
             // 
-            this.label258.BackColor = System.Drawing.Color.White;
+            this.label258.BackColor = System.Drawing.Color.LightGreen;
             this.label258.Location = new System.Drawing.Point(229, 122);
             this.label258.Name = "label258";
-            this.label258.Size = new System.Drawing.Size(2, 2);
+            this.label258.Size = new System.Drawing.Size(4, 4);
             this.label258.TabIndex = 408;
             // 
             // label259
             // 
-            this.label259.BackColor = System.Drawing.Color.White;
+            this.label259.BackColor = System.Drawing.Color.LightGreen;
             this.label259.Location = new System.Drawing.Point(220, 122);
             this.label259.Name = "label259";
-            this.label259.Size = new System.Drawing.Size(2, 2);
+            this.label259.Size = new System.Drawing.Size(4, 4);
             this.label259.TabIndex = 407;
             // 
             // label260
             // 
-            this.label260.BackColor = System.Drawing.Color.White;
+            this.label260.BackColor = System.Drawing.Color.LightGreen;
             this.label260.Location = new System.Drawing.Point(211, 122);
             this.label260.Name = "label260";
-            this.label260.Size = new System.Drawing.Size(2, 2);
+            this.label260.Size = new System.Drawing.Size(4, 4);
             this.label260.TabIndex = 406;
             // 
             // label261
             // 
-            this.label261.BackColor = System.Drawing.Color.White;
+            this.label261.BackColor = System.Drawing.Color.LightGreen;
             this.label261.Location = new System.Drawing.Point(165, 122);
             this.label261.Name = "label261";
-            this.label261.Size = new System.Drawing.Size(2, 2);
+            this.label261.Size = new System.Drawing.Size(4, 4);
             this.label261.TabIndex = 405;
             // 
             // label262
             // 
-            this.label262.BackColor = System.Drawing.Color.White;
+            this.label262.BackColor = System.Drawing.Color.LightGreen;
             this.label262.Location = new System.Drawing.Point(156, 122);
             this.label262.Name = "label262";
-            this.label262.Size = new System.Drawing.Size(2, 2);
+            this.label262.Size = new System.Drawing.Size(4, 4);
             this.label262.TabIndex = 404;
             // 
             // label263
             // 
-            this.label263.BackColor = System.Drawing.Color.White;
+            this.label263.BackColor = System.Drawing.Color.LightGreen;
             this.label263.Location = new System.Drawing.Point(147, 122);
             this.label263.Name = "label263";
-            this.label263.Size = new System.Drawing.Size(2, 2);
+            this.label263.Size = new System.Drawing.Size(4, 4);
             this.label263.TabIndex = 403;
             // 
             // label264
             // 
-            this.label264.BackColor = System.Drawing.Color.White;
+            this.label264.BackColor = System.Drawing.Color.LightGreen;
             this.label264.Location = new System.Drawing.Point(138, 122);
             this.label264.Name = "label264";
-            this.label264.Size = new System.Drawing.Size(2, 2);
+            this.label264.Size = new System.Drawing.Size(4, 4);
             this.label264.TabIndex = 402;
             // 
             // label265
             // 
-            this.label265.BackColor = System.Drawing.Color.White;
+            this.label265.BackColor = System.Drawing.Color.LightGreen;
             this.label265.Location = new System.Drawing.Point(129, 122);
             this.label265.Name = "label265";
-            this.label265.Size = new System.Drawing.Size(2, 2);
+            this.label265.Size = new System.Drawing.Size(4, 4);
             this.label265.TabIndex = 401;
             // 
             // label272
             // 
-            this.label272.BackColor = System.Drawing.Color.White;
+            this.label272.BackColor = System.Drawing.Color.LightGreen;
             this.label272.Location = new System.Drawing.Point(192, 85);
             this.label272.Name = "label272";
-            this.label272.Size = new System.Drawing.Size(2, 2);
+            this.label272.Size = new System.Drawing.Size(4, 4);
             this.label272.TabIndex = 432;
             // 
             // label273
             // 
-            this.label273.BackColor = System.Drawing.Color.White;
+            this.label273.BackColor = System.Drawing.Color.LightGreen;
             this.label273.Location = new System.Drawing.Point(183, 85);
             this.label273.Name = "label273";
-            this.label273.Size = new System.Drawing.Size(2, 2);
+            this.label273.Size = new System.Drawing.Size(4, 4);
             this.label273.TabIndex = 431;
             // 
             // label274
             // 
-            this.label274.BackColor = System.Drawing.Color.White;
+            this.label274.BackColor = System.Drawing.Color.LightGreen;
             this.label274.Location = new System.Drawing.Point(174, 85);
             this.label274.Name = "label274";
-            this.label274.Size = new System.Drawing.Size(2, 2);
+            this.label274.Size = new System.Drawing.Size(4, 4);
             this.label274.TabIndex = 430;
             // 
             // label280
             // 
-            this.label280.BackColor = System.Drawing.Color.White;
-            this.label280.Location = new System.Drawing.Point(165, 85);
+            this.label280.BackColor = System.Drawing.Color.Red;
+            this.label280.Location = new System.Drawing.Point(161, 82);
             this.label280.Name = "label280";
-            this.label280.Size = new System.Drawing.Size(2, 2);
+            this.label280.Size = new System.Drawing.Size(10, 10);
             this.label280.TabIndex = 424;
             // 
             // label281
             // 
-            this.label281.BackColor = System.Drawing.Color.White;
+            this.label281.BackColor = System.Drawing.Color.LightGreen;
             this.label281.Location = new System.Drawing.Point(156, 85);
             this.label281.Name = "label281";
-            this.label281.Size = new System.Drawing.Size(2, 2);
+            this.label281.Size = new System.Drawing.Size(4, 4);
             this.label281.TabIndex = 423;
             // 
             // label282
             // 
-            this.label282.BackColor = System.Drawing.Color.White;
+            this.label282.BackColor = System.Drawing.Color.LightGreen;
             this.label282.Location = new System.Drawing.Point(147, 85);
             this.label282.Name = "label282";
-            this.label282.Size = new System.Drawing.Size(2, 2);
+            this.label282.Size = new System.Drawing.Size(4, 4);
             this.label282.TabIndex = 422;
             // 
             // label283
             // 
-            this.label283.BackColor = System.Drawing.Color.White;
+            this.label283.BackColor = System.Drawing.Color.LightGreen;
             this.label283.Location = new System.Drawing.Point(138, 85);
             this.label283.Name = "label283";
-            this.label283.Size = new System.Drawing.Size(2, 2);
+            this.label283.Size = new System.Drawing.Size(4, 4);
             this.label283.TabIndex = 421;
             // 
             // label284
             // 
-            this.label284.BackColor = System.Drawing.Color.White;
+            this.label284.BackColor = System.Drawing.Color.LightGreen;
             this.label284.Location = new System.Drawing.Point(129, 85);
             this.label284.Name = "label284";
-            this.label284.Size = new System.Drawing.Size(2, 2);
+            this.label284.Size = new System.Drawing.Size(4, 4);
             this.label284.TabIndex = 420;
             // 
             // label266
             // 
-            this.label266.BackColor = System.Drawing.Color.White;
+            this.label266.BackColor = System.Drawing.Color.LightGreen;
             this.label266.Location = new System.Drawing.Point(94, 66);
             this.label266.Name = "label266";
-            this.label266.Size = new System.Drawing.Size(2, 2);
+            this.label266.Size = new System.Drawing.Size(4, 4);
             this.label266.TabIndex = 449;
             // 
             // label267
             // 
-            this.label267.BackColor = System.Drawing.Color.White;
+            this.label267.BackColor = System.Drawing.Color.LightGreen;
             this.label267.Location = new System.Drawing.Point(94, 76);
             this.label267.Name = "label267";
-            this.label267.Size = new System.Drawing.Size(2, 2);
+            this.label267.Size = new System.Drawing.Size(4, 4);
             this.label267.TabIndex = 448;
             // 
             // label268
             // 
-            this.label268.BackColor = System.Drawing.Color.White;
+            this.label268.BackColor = System.Drawing.Color.LightGreen;
             this.label268.Location = new System.Drawing.Point(94, 47);
             this.label268.Name = "label268";
-            this.label268.Size = new System.Drawing.Size(2, 2);
+            this.label268.Size = new System.Drawing.Size(4, 4);
             this.label268.TabIndex = 447;
             // 
             // label269
             // 
-            this.label269.BackColor = System.Drawing.Color.White;
+            this.label269.BackColor = System.Drawing.Color.LightGreen;
             this.label269.Location = new System.Drawing.Point(94, 57);
             this.label269.Name = "label269";
-            this.label269.Size = new System.Drawing.Size(2, 2);
+            this.label269.Size = new System.Drawing.Size(4, 4);
             this.label269.TabIndex = 446;
             // 
             // label270
             // 
-            this.label270.BackColor = System.Drawing.Color.White;
+            this.label270.BackColor = System.Drawing.Color.LightGreen;
             this.label270.Location = new System.Drawing.Point(138, 38);
             this.label270.Name = "label270";
-            this.label270.Size = new System.Drawing.Size(2, 2);
+            this.label270.Size = new System.Drawing.Size(4, 4);
             this.label270.TabIndex = 445;
             // 
             // label271
             // 
-            this.label271.BackColor = System.Drawing.Color.White;
+            this.label271.BackColor = System.Drawing.Color.LightGreen;
             this.label271.Location = new System.Drawing.Point(129, 38);
             this.label271.Name = "label271";
-            this.label271.Size = new System.Drawing.Size(2, 2);
+            this.label271.Size = new System.Drawing.Size(4, 4);
             this.label271.TabIndex = 444;
             // 
             // label275
             // 
-            this.label275.BackColor = System.Drawing.Color.White;
+            this.label275.BackColor = System.Drawing.Color.LightGreen;
             this.label275.Location = new System.Drawing.Point(120, 38);
             this.label275.Name = "label275";
-            this.label275.Size = new System.Drawing.Size(2, 2);
+            this.label275.Size = new System.Drawing.Size(4, 4);
             this.label275.TabIndex = 443;
             // 
             // label276
             // 
-            this.label276.BackColor = System.Drawing.Color.White;
+            this.label276.BackColor = System.Drawing.Color.LightGreen;
             this.label276.Location = new System.Drawing.Point(111, 38);
             this.label276.Name = "label276";
-            this.label276.Size = new System.Drawing.Size(2, 2);
+            this.label276.Size = new System.Drawing.Size(4, 4);
             this.label276.TabIndex = 442;
             // 
             // label277
             // 
-            this.label277.BackColor = System.Drawing.Color.White;
+            this.label277.BackColor = System.Drawing.Color.LightGreen;
             this.label277.Location = new System.Drawing.Point(102, 38);
             this.label277.Name = "label277";
-            this.label277.Size = new System.Drawing.Size(2, 2);
+            this.label277.Size = new System.Drawing.Size(4, 4);
             this.label277.TabIndex = 441;
             // 
             // label278
             // 
-            this.label278.BackColor = System.Drawing.Color.White;
+            this.label278.BackColor = System.Drawing.Color.LightGreen;
             this.label278.Location = new System.Drawing.Point(94, 38);
             this.label278.Name = "label278";
-            this.label278.Size = new System.Drawing.Size(2, 2);
+            this.label278.Size = new System.Drawing.Size(4, 4);
             this.label278.TabIndex = 440;
             // 
             // label279
             // 
-            this.label279.BackColor = System.Drawing.Color.White;
+            this.label279.BackColor = System.Drawing.Color.LightGreen;
             this.label279.Location = new System.Drawing.Point(165, 38);
             this.label279.Name = "label279";
-            this.label279.Size = new System.Drawing.Size(2, 2);
+            this.label279.Size = new System.Drawing.Size(4, 4);
             this.label279.TabIndex = 439;
             // 
             // label285
             // 
-            this.label285.BackColor = System.Drawing.Color.White;
+            this.label285.BackColor = System.Drawing.Color.LightGreen;
             this.label285.Location = new System.Drawing.Point(156, 38);
             this.label285.Name = "label285";
-            this.label285.Size = new System.Drawing.Size(2, 2);
+            this.label285.Size = new System.Drawing.Size(4, 4);
             this.label285.TabIndex = 438;
             // 
             // label286
             // 
-            this.label286.BackColor = System.Drawing.Color.White;
+            this.label286.BackColor = System.Drawing.Color.LightGreen;
             this.label286.Location = new System.Drawing.Point(147, 38);
             this.label286.Name = "label286";
-            this.label286.Size = new System.Drawing.Size(2, 2);
+            this.label286.Size = new System.Drawing.Size(4, 4);
             this.label286.TabIndex = 437;
             // 
             // label287
             // 
-            this.label287.BackColor = System.Drawing.Color.White;
+            this.label287.BackColor = System.Drawing.Color.LightGreen;
             this.label287.Location = new System.Drawing.Point(165, 66);
             this.label287.Name = "label287";
-            this.label287.Size = new System.Drawing.Size(2, 2);
+            this.label287.Size = new System.Drawing.Size(4, 4);
             this.label287.TabIndex = 436;
             // 
             // label288
             // 
-            this.label288.BackColor = System.Drawing.Color.White;
+            this.label288.BackColor = System.Drawing.Color.LightGreen;
             this.label288.Location = new System.Drawing.Point(165, 76);
             this.label288.Name = "label288";
-            this.label288.Size = new System.Drawing.Size(2, 2);
+            this.label288.Size = new System.Drawing.Size(4, 4);
             this.label288.TabIndex = 435;
             // 
             // label289
             // 
-            this.label289.BackColor = System.Drawing.Color.White;
+            this.label289.BackColor = System.Drawing.Color.LightGreen;
             this.label289.Location = new System.Drawing.Point(165, 47);
             this.label289.Name = "label289";
-            this.label289.Size = new System.Drawing.Size(2, 2);
+            this.label289.Size = new System.Drawing.Size(4, 4);
             this.label289.TabIndex = 434;
             // 
             // label290
             // 
-            this.label290.BackColor = System.Drawing.Color.White;
+            this.label290.BackColor = System.Drawing.Color.LightGreen;
             this.label290.Location = new System.Drawing.Point(165, 57);
             this.label290.Name = "label290";
-            this.label290.Size = new System.Drawing.Size(2, 2);
+            this.label290.Size = new System.Drawing.Size(4, 4);
             this.label290.TabIndex = 433;
             // 
             // label293
             // 
-            this.label293.BackColor = System.Drawing.Color.White;
+            this.label293.BackColor = System.Drawing.Color.LightGreen;
             this.label293.Location = new System.Drawing.Point(49, 85);
             this.label293.Name = "label293";
-            this.label293.Size = new System.Drawing.Size(2, 2);
+            this.label293.Size = new System.Drawing.Size(4, 4);
             this.label293.TabIndex = 459;
             // 
             // label294
             // 
-            this.label294.BackColor = System.Drawing.Color.White;
+            this.label294.BackColor = System.Drawing.Color.LightGreen;
             this.label294.Location = new System.Drawing.Point(40, 85);
             this.label294.Name = "label294";
-            this.label294.Size = new System.Drawing.Size(2, 2);
+            this.label294.Size = new System.Drawing.Size(4, 4);
             this.label294.TabIndex = 458;
             // 
             // label295
             // 
-            this.label295.BackColor = System.Drawing.Color.White;
+            this.label295.BackColor = System.Drawing.Color.LightGreen;
             this.label295.Location = new System.Drawing.Point(111, 85);
             this.label295.Name = "label295";
-            this.label295.Size = new System.Drawing.Size(2, 2);
+            this.label295.Size = new System.Drawing.Size(4, 4);
             this.label295.TabIndex = 457;
             // 
             // label296
             // 
-            this.label296.BackColor = System.Drawing.Color.White;
+            this.label296.BackColor = System.Drawing.Color.LightGreen;
             this.label296.Location = new System.Drawing.Point(103, 85);
             this.label296.Name = "label296";
-            this.label296.Size = new System.Drawing.Size(2, 2);
+            this.label296.Size = new System.Drawing.Size(4, 4);
             this.label296.TabIndex = 456;
             // 
             // label297
             // 
-            this.label297.BackColor = System.Drawing.Color.White;
+            this.label297.BackColor = System.Drawing.Color.LightGreen;
             this.label297.Location = new System.Drawing.Point(94, 85);
             this.label297.Name = "label297";
-            this.label297.Size = new System.Drawing.Size(2, 2);
+            this.label297.Size = new System.Drawing.Size(4, 4);
             this.label297.TabIndex = 455;
             // 
             // label298
             // 
-            this.label298.BackColor = System.Drawing.Color.White;
+            this.label298.BackColor = System.Drawing.Color.LightGreen;
             this.label298.Location = new System.Drawing.Point(85, 85);
             this.label298.Name = "label298";
-            this.label298.Size = new System.Drawing.Size(2, 2);
+            this.label298.Size = new System.Drawing.Size(4, 4);
             this.label298.TabIndex = 454;
             // 
             // label299
             // 
-            this.label299.BackColor = System.Drawing.Color.White;
+            this.label299.BackColor = System.Drawing.Color.LightGreen;
             this.label299.Location = new System.Drawing.Point(76, 85);
             this.label299.Name = "label299";
-            this.label299.Size = new System.Drawing.Size(2, 2);
+            this.label299.Size = new System.Drawing.Size(4, 4);
             this.label299.TabIndex = 453;
             // 
             // label300
             // 
-            this.label300.BackColor = System.Drawing.Color.White;
+            this.label300.BackColor = System.Drawing.Color.LightGreen;
             this.label300.Location = new System.Drawing.Point(67, 85);
             this.label300.Name = "label300";
-            this.label300.Size = new System.Drawing.Size(2, 2);
+            this.label300.Size = new System.Drawing.Size(4, 4);
             this.label300.TabIndex = 452;
             // 
             // label301
             // 
-            this.label301.BackColor = System.Drawing.Color.White;
+            this.label301.BackColor = System.Drawing.Color.LightGreen;
             this.label301.Location = new System.Drawing.Point(120, 85);
             this.label301.Name = "label301";
-            this.label301.Size = new System.Drawing.Size(2, 2);
+            this.label301.Size = new System.Drawing.Size(4, 4);
             this.label301.TabIndex = 451;
             // 
             // label302
             // 
-            this.label302.BackColor = System.Drawing.Color.White;
+            this.label302.BackColor = System.Drawing.Color.LightGreen;
             this.label302.Location = new System.Drawing.Point(58, 85);
             this.label302.Name = "label302";
-            this.label302.Size = new System.Drawing.Size(2, 2);
+            this.label302.Size = new System.Drawing.Size(4, 4);
             this.label302.TabIndex = 450;
             // 
             // label291
             // 
-            this.label291.BackColor = System.Drawing.Color.White;
+            this.label291.BackColor = System.Drawing.Color.LightGreen;
             this.label291.Location = new System.Drawing.Point(32, 94);
             this.label291.Name = "label291";
-            this.label291.Size = new System.Drawing.Size(2, 2);
+            this.label291.Size = new System.Drawing.Size(4, 4);
             this.label291.TabIndex = 469;
             // 
             // label292
             // 
-            this.label292.BackColor = System.Drawing.Color.White;
+            this.label292.BackColor = System.Drawing.Color.LightGreen;
             this.label292.Location = new System.Drawing.Point(32, 113);
             this.label292.Name = "label292";
-            this.label292.Size = new System.Drawing.Size(2, 2);
+            this.label292.Size = new System.Drawing.Size(4, 4);
             this.label292.TabIndex = 468;
             // 
             // label303
             // 
-            this.label303.BackColor = System.Drawing.Color.White;
+            this.label303.BackColor = System.Drawing.Color.LightGreen;
             this.label303.Location = new System.Drawing.Point(32, 104);
             this.label303.Name = "label303";
-            this.label303.Size = new System.Drawing.Size(2, 2);
+            this.label303.Size = new System.Drawing.Size(4, 4);
             this.label303.TabIndex = 467;
             // 
             // label304
             // 
-            this.label304.BackColor = System.Drawing.Color.White;
+            this.label304.BackColor = System.Drawing.Color.LightGreen;
             this.label304.Location = new System.Drawing.Point(32, 122);
             this.label304.Name = "label304";
-            this.label304.Size = new System.Drawing.Size(2, 2);
+            this.label304.Size = new System.Drawing.Size(4, 4);
             this.label304.TabIndex = 466;
             // 
             // label305
             // 
-            this.label305.BackColor = System.Drawing.Color.White;
+            this.label305.BackColor = System.Drawing.Color.LightGreen;
             this.label305.Location = new System.Drawing.Point(32, 76);
             this.label305.Name = "label305";
-            this.label305.Size = new System.Drawing.Size(2, 2);
+            this.label305.Size = new System.Drawing.Size(4, 4);
             this.label305.TabIndex = 465;
             // 
             // label306
             // 
-            this.label306.BackColor = System.Drawing.Color.White;
+            this.label306.BackColor = System.Drawing.Color.LightGreen;
             this.label306.Location = new System.Drawing.Point(32, 67);
             this.label306.Name = "label306";
-            this.label306.Size = new System.Drawing.Size(2, 2);
+            this.label306.Size = new System.Drawing.Size(4, 4);
             this.label306.TabIndex = 464;
             // 
             // label307
@@ -2940,274 +2952,274 @@ namespace Pacman_Zagorschi_Franco
             // 
             // label308
             // 
-            this.label308.BackColor = System.Drawing.Color.White;
+            this.label308.BackColor = System.Drawing.Color.LightGreen;
             this.label308.Location = new System.Drawing.Point(32, 85);
             this.label308.Name = "label308";
-            this.label308.Size = new System.Drawing.Size(2, 2);
+            this.label308.Size = new System.Drawing.Size(4, 4);
             this.label308.TabIndex = 462;
             // 
             // label309
             // 
-            this.label309.BackColor = System.Drawing.Color.White;
+            this.label309.BackColor = System.Drawing.Color.LightGreen;
             this.label309.Location = new System.Drawing.Point(32, 48);
             this.label309.Name = "label309";
-            this.label309.Size = new System.Drawing.Size(2, 2);
+            this.label309.Size = new System.Drawing.Size(4, 4);
             this.label309.TabIndex = 461;
             // 
             // label310
             // 
-            this.label310.BackColor = System.Drawing.Color.White;
+            this.label310.BackColor = System.Drawing.Color.LightGreen;
             this.label310.Location = new System.Drawing.Point(32, 38);
             this.label310.Name = "label310";
-            this.label310.Size = new System.Drawing.Size(2, 2);
+            this.label310.Size = new System.Drawing.Size(4, 4);
             this.label310.TabIndex = 460;
             // 
             // label311
             // 
-            this.label311.BackColor = System.Drawing.Color.White;
+            this.label311.BackColor = System.Drawing.Color.LightGreen;
             this.label311.Location = new System.Drawing.Point(85, 38);
             this.label311.Name = "label311";
-            this.label311.Size = new System.Drawing.Size(2, 2);
+            this.label311.Size = new System.Drawing.Size(4, 4);
             this.label311.TabIndex = 475;
             // 
             // label312
             // 
-            this.label312.BackColor = System.Drawing.Color.White;
+            this.label312.BackColor = System.Drawing.Color.LightGreen;
             this.label312.Location = new System.Drawing.Point(77, 38);
             this.label312.Name = "label312";
-            this.label312.Size = new System.Drawing.Size(2, 2);
+            this.label312.Size = new System.Drawing.Size(4, 4);
             this.label312.TabIndex = 474;
             // 
             // label313
             // 
-            this.label313.BackColor = System.Drawing.Color.White;
+            this.label313.BackColor = System.Drawing.Color.LightGreen;
             this.label313.Location = new System.Drawing.Point(68, 38);
             this.label313.Name = "label313";
-            this.label313.Size = new System.Drawing.Size(2, 2);
+            this.label313.Size = new System.Drawing.Size(4, 4);
             this.label313.TabIndex = 473;
             // 
             // label314
             // 
-            this.label314.BackColor = System.Drawing.Color.White;
+            this.label314.BackColor = System.Drawing.Color.LightGreen;
             this.label314.Location = new System.Drawing.Point(59, 38);
             this.label314.Name = "label314";
-            this.label314.Size = new System.Drawing.Size(2, 2);
+            this.label314.Size = new System.Drawing.Size(4, 4);
             this.label314.TabIndex = 472;
             // 
             // label315
             // 
-            this.label315.BackColor = System.Drawing.Color.White;
+            this.label315.BackColor = System.Drawing.Color.LightGreen;
             this.label315.Location = new System.Drawing.Point(50, 38);
             this.label315.Name = "label315";
-            this.label315.Size = new System.Drawing.Size(2, 2);
+            this.label315.Size = new System.Drawing.Size(4, 4);
             this.label315.TabIndex = 471;
             // 
             // label316
             // 
-            this.label316.BackColor = System.Drawing.Color.White;
+            this.label316.BackColor = System.Drawing.Color.LightGreen;
             this.label316.Location = new System.Drawing.Point(41, 38);
             this.label316.Name = "label316";
-            this.label316.Size = new System.Drawing.Size(2, 2);
+            this.label316.Size = new System.Drawing.Size(4, 4);
             this.label316.TabIndex = 470;
             // 
             // label317
             // 
-            this.label317.BackColor = System.Drawing.Color.White;
+            this.label317.BackColor = System.Drawing.Color.LightGreen;
             this.label317.Location = new System.Drawing.Point(85, 122);
             this.label317.Name = "label317";
-            this.label317.Size = new System.Drawing.Size(2, 2);
+            this.label317.Size = new System.Drawing.Size(4, 4);
             this.label317.TabIndex = 482;
             // 
             // label318
             // 
-            this.label318.BackColor = System.Drawing.Color.White;
+            this.label318.BackColor = System.Drawing.Color.LightGreen;
             this.label318.Location = new System.Drawing.Point(76, 122);
             this.label318.Name = "label318";
-            this.label318.Size = new System.Drawing.Size(2, 2);
+            this.label318.Size = new System.Drawing.Size(4, 4);
             this.label318.TabIndex = 481;
             // 
             // label319
             // 
-            this.label319.BackColor = System.Drawing.Color.White;
+            this.label319.BackColor = System.Drawing.Color.LightGreen;
             this.label319.Location = new System.Drawing.Point(67, 122);
             this.label319.Name = "label319";
-            this.label319.Size = new System.Drawing.Size(2, 2);
+            this.label319.Size = new System.Drawing.Size(4, 4);
             this.label319.TabIndex = 480;
             // 
             // label320
             // 
-            this.label320.BackColor = System.Drawing.Color.White;
+            this.label320.BackColor = System.Drawing.Color.LightGreen;
             this.label320.Location = new System.Drawing.Point(58, 122);
             this.label320.Name = "label320";
-            this.label320.Size = new System.Drawing.Size(2, 2);
+            this.label320.Size = new System.Drawing.Size(4, 4);
             this.label320.TabIndex = 479;
             // 
             // label321
             // 
-            this.label321.BackColor = System.Drawing.Color.White;
+            this.label321.BackColor = System.Drawing.Color.LightGreen;
             this.label321.Location = new System.Drawing.Point(49, 122);
             this.label321.Name = "label321";
-            this.label321.Size = new System.Drawing.Size(2, 2);
+            this.label321.Size = new System.Drawing.Size(4, 4);
             this.label321.TabIndex = 478;
             // 
             // label322
             // 
-            this.label322.BackColor = System.Drawing.Color.White;
+            this.label322.BackColor = System.Drawing.Color.LightGreen;
             this.label322.Location = new System.Drawing.Point(40, 122);
             this.label322.Name = "label322";
-            this.label322.Size = new System.Drawing.Size(2, 2);
+            this.label322.Size = new System.Drawing.Size(4, 4);
             this.label322.TabIndex = 477;
             // 
             // label323
             // 
-            this.label323.BackColor = System.Drawing.Color.White;
+            this.label323.BackColor = System.Drawing.Color.LightGreen;
             this.label323.Location = new System.Drawing.Point(94, 122);
             this.label323.Name = "label323";
-            this.label323.Size = new System.Drawing.Size(2, 2);
+            this.label323.Size = new System.Drawing.Size(4, 4);
             this.label323.TabIndex = 476;
             // 
             // label324
             // 
-            this.label324.BackColor = System.Drawing.Color.White;
+            this.label324.BackColor = System.Drawing.Color.LightGreen;
             this.label324.Location = new System.Drawing.Point(94, 103);
             this.label324.Name = "label324";
-            this.label324.Size = new System.Drawing.Size(2, 2);
+            this.label324.Size = new System.Drawing.Size(4, 4);
             this.label324.TabIndex = 486;
             // 
             // label325
             // 
-            this.label325.BackColor = System.Drawing.Color.White;
+            this.label325.BackColor = System.Drawing.Color.LightGreen;
             this.label325.Location = new System.Drawing.Point(94, 113);
             this.label325.Name = "label325";
-            this.label325.Size = new System.Drawing.Size(2, 2);
+            this.label325.Size = new System.Drawing.Size(4, 4);
             this.label325.TabIndex = 485;
             // 
             // label327
             // 
-            this.label327.BackColor = System.Drawing.Color.White;
+            this.label327.BackColor = System.Drawing.Color.LightGreen;
             this.label327.Location = new System.Drawing.Point(94, 94);
             this.label327.Name = "label327";
-            this.label327.Size = new System.Drawing.Size(2, 2);
+            this.label327.Size = new System.Drawing.Size(4, 4);
             this.label327.TabIndex = 483;
             // 
             // label326
             // 
-            this.label326.BackColor = System.Drawing.Color.White;
+            this.label326.BackColor = System.Drawing.Color.LightGreen;
             this.label326.Location = new System.Drawing.Point(94, 149);
             this.label326.Name = "label326";
-            this.label326.Size = new System.Drawing.Size(2, 2);
+            this.label326.Size = new System.Drawing.Size(4, 4);
             this.label326.TabIndex = 501;
             // 
             // label328
             // 
-            this.label328.BackColor = System.Drawing.Color.White;
+            this.label328.BackColor = System.Drawing.Color.LightGreen;
             this.label328.Location = new System.Drawing.Point(94, 167);
             this.label328.Name = "label328";
-            this.label328.Size = new System.Drawing.Size(2, 2);
+            this.label328.Size = new System.Drawing.Size(4, 4);
             this.label328.TabIndex = 500;
             // 
             // label329
             // 
-            this.label329.BackColor = System.Drawing.Color.White;
+            this.label329.BackColor = System.Drawing.Color.LightGreen;
             this.label329.Location = new System.Drawing.Point(94, 158);
             this.label329.Name = "label329";
-            this.label329.Size = new System.Drawing.Size(2, 2);
+            this.label329.Size = new System.Drawing.Size(4, 4);
             this.label329.TabIndex = 499;
             // 
             // label330
             // 
-            this.label330.BackColor = System.Drawing.Color.White;
+            this.label330.BackColor = System.Drawing.Color.LightGreen;
             this.label330.Location = new System.Drawing.Point(94, 176);
             this.label330.Name = "label330";
-            this.label330.Size = new System.Drawing.Size(2, 2);
+            this.label330.Size = new System.Drawing.Size(4, 4);
             this.label330.TabIndex = 498;
             // 
             // label331
             // 
-            this.label331.BackColor = System.Drawing.Color.White;
+            this.label331.BackColor = System.Drawing.Color.LightGreen;
             this.label331.Location = new System.Drawing.Point(94, 131);
             this.label331.Name = "label331";
-            this.label331.Size = new System.Drawing.Size(2, 2);
+            this.label331.Size = new System.Drawing.Size(4, 4);
             this.label331.TabIndex = 497;
             // 
             // label332
             // 
-            this.label332.BackColor = System.Drawing.Color.White;
+            this.label332.BackColor = System.Drawing.Color.LightGreen;
             this.label332.Location = new System.Drawing.Point(94, 140);
             this.label332.Name = "label332";
-            this.label332.Size = new System.Drawing.Size(2, 2);
+            this.label332.Size = new System.Drawing.Size(4, 4);
             this.label332.TabIndex = 496;
             // 
             // label333
             // 
-            this.label333.BackColor = System.Drawing.Color.White;
+            this.label333.BackColor = System.Drawing.Color.LightGreen;
             this.label333.Location = new System.Drawing.Point(94, 230);
             this.label333.Name = "label333";
-            this.label333.Size = new System.Drawing.Size(2, 2);
+            this.label333.Size = new System.Drawing.Size(4, 4);
             this.label333.TabIndex = 495;
             // 
             // label334
             // 
-            this.label334.BackColor = System.Drawing.Color.White;
+            this.label334.BackColor = System.Drawing.Color.LightGreen;
             this.label334.Location = new System.Drawing.Point(94, 248);
             this.label334.Name = "label334";
-            this.label334.Size = new System.Drawing.Size(2, 2);
+            this.label334.Size = new System.Drawing.Size(4, 4);
             this.label334.TabIndex = 494;
             // 
             // label335
             // 
-            this.label335.BackColor = System.Drawing.Color.White;
+            this.label335.BackColor = System.Drawing.Color.LightGreen;
             this.label335.Location = new System.Drawing.Point(94, 239);
             this.label335.Name = "label335";
-            this.label335.Size = new System.Drawing.Size(2, 2);
+            this.label335.Size = new System.Drawing.Size(4, 4);
             this.label335.TabIndex = 493;
             // 
             // label336
             // 
-            this.label336.BackColor = System.Drawing.Color.White;
+            this.label336.BackColor = System.Drawing.Color.LightGreen;
             this.label336.Location = new System.Drawing.Point(94, 257);
             this.label336.Name = "label336";
-            this.label336.Size = new System.Drawing.Size(2, 2);
+            this.label336.Size = new System.Drawing.Size(4, 4);
             this.label336.TabIndex = 492;
             // 
             // label337
             // 
-            this.label337.BackColor = System.Drawing.Color.White;
+            this.label337.BackColor = System.Drawing.Color.LightGreen;
             this.label337.Location = new System.Drawing.Point(94, 212);
             this.label337.Name = "label337";
-            this.label337.Size = new System.Drawing.Size(2, 2);
+            this.label337.Size = new System.Drawing.Size(4, 4);
             this.label337.TabIndex = 491;
             // 
             // label338
             // 
-            this.label338.BackColor = System.Drawing.Color.White;
+            this.label338.BackColor = System.Drawing.Color.LightGreen;
             this.label338.Location = new System.Drawing.Point(94, 203);
             this.label338.Name = "label338";
-            this.label338.Size = new System.Drawing.Size(2, 2);
+            this.label338.Size = new System.Drawing.Size(4, 4);
             this.label338.TabIndex = 490;
             // 
             // label339
             // 
-            this.label339.BackColor = System.Drawing.Color.White;
+            this.label339.BackColor = System.Drawing.Color.LightGreen;
             this.label339.Location = new System.Drawing.Point(94, 194);
             this.label339.Name = "label339";
-            this.label339.Size = new System.Drawing.Size(2, 2);
+            this.label339.Size = new System.Drawing.Size(4, 4);
             this.label339.TabIndex = 489;
             // 
             // label340
             // 
-            this.label340.BackColor = System.Drawing.Color.White;
+            this.label340.BackColor = System.Drawing.Color.LightGreen;
             this.label340.Location = new System.Drawing.Point(94, 221);
             this.label340.Name = "label340";
-            this.label340.Size = new System.Drawing.Size(2, 2);
+            this.label340.Size = new System.Drawing.Size(4, 4);
             this.label340.TabIndex = 488;
             // 
             // label341
             // 
-            this.label341.BackColor = System.Drawing.Color.White;
+            this.label341.BackColor = System.Drawing.Color.LightGreen;
             this.label341.Location = new System.Drawing.Point(94, 185);
             this.label341.Name = "label341";
-            this.label341.Size = new System.Drawing.Size(2, 2);
+            this.label341.Size = new System.Drawing.Size(4, 4);
             this.label341.TabIndex = 487;
             // 
             // timer8
@@ -3399,7 +3411,7 @@ namespace Pacman_Zagorschi_Franco
             this.label142.Size = new System.Drawing.Size(266, 20);
             this.label142.TabIndex = 8;
             this.label142.Text = "2.Chung Long(101227936)";
-            
+
             // 
             // Form1
             // 
@@ -3751,6 +3763,7 @@ namespace Pacman_Zagorschi_Franco
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.score);
+            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -3770,6 +3783,7 @@ namespace Pacman_Zagorschi_Franco
             this.Text = "Pac-Man";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -3791,7 +3805,8 @@ namespace Pacman_Zagorschi_Franco
         private System.Windows.Forms.Label ghost3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer2;
