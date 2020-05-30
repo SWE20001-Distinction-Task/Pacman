@@ -31,5 +31,43 @@ namespace TestPacman
             form.life();
             Assert.AreEqual(false, pictureBox1.Visible);
         }
+        [Test]//Yeat
+        public void TestCheatCode()
+        {
+
+            Boolean cheatGameSpeed = false, cheatInfiniteLife = false;
+
+            string cheatCode = "SPEEDGOD";
+            //SPEEDGOD makes the game faster
+            if (cheatCode == "SPEEDGOD")
+                cheatGameSpeed = true;
+            //GODMODE makes the pacman never decrease in current number of life
+            //In another word it means infinite life
+            else if (cheatCode == "GODMODE")
+                cheatInfiniteLife = true;
+            //REALGAME cancel the cheat code
+            else if (cheatCode == "REALGAME")
+            {
+                cheatGameSpeed = false;
+                cheatInfiniteLife = false;
+            }
+            Assert.AreEqual(true, cheatGameSpeed);
+            cheatCode = "REALGAME";
+
+            if (cheatCode == "SPEEDGOD")
+                cheatGameSpeed = true;
+            //GODMODE makes the pacman never decrease in current number of life
+            //In another word it means infinite life
+            else if (cheatCode == "GODMODE")
+                cheatInfiniteLife = true;
+            //REALGAME cancel the cheat code
+            else if (cheatCode == "REALGAME")
+            {
+                cheatGameSpeed = false;
+                cheatInfiniteLife = false;
+            }
+            Assert.AreEqual(false, cheatGameSpeed);
+
+        }
     }
 }
