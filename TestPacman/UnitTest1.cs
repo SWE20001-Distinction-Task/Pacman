@@ -69,5 +69,13 @@ namespace TestPacman
             Assert.AreEqual(false, cheatGameSpeed);
 
         }
+        
+        [Test]//Jasmin
+        public void TestMusic()
+        {
+            System.Media.SoundPlayer test = new System.Media.SoundPlayer();
+            test.SoundLocation = "mainmenu.wav";
+            Assert.AreEqual(test.SoundLocation, "mainmenu.wav");
+        }
     }
 }
