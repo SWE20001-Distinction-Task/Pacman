@@ -414,6 +414,8 @@ namespace Pacman_Zagorschi_Franco
             points();
             panel1.Visible = true;
             resetall();
+            label142.Text = "1. Yeat(100078269)";
+            label253.Text = "2.Chung Long(101227936)";
         }
 
         public string ShowDialog(string text, string caption)
