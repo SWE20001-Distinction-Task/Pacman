@@ -69,7 +69,7 @@ namespace TestPacman
             Assert.AreEqual(false, cheatGameSpeed);
 
         }
-        
+
         [Test]//Jasmin
         public void TestMusic()
         {
