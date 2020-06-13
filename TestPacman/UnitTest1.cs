@@ -35,38 +35,14 @@ namespace TestPacman
         public void TestCheatCode()
         {
 
-            Boolean cheatGameSpeed = false, cheatInfiniteLife = false;
-
-            string cheatCode = "SPEEDGOD";
-            //SPEEDGOD makes the game faster
-            if (cheatCode == "SPEEDGOD")
-                cheatGameSpeed = true;
-            //GODMODE makes the pacman never decrease in current number of life
-            //In another word it means infinite life
-            else if (cheatCode == "GODMODE")
-                cheatInfiniteLife = true;
-            //REALGAME cancel the cheat code
-            else if (cheatCode == "REALGAME")
-            {
-                cheatGameSpeed = false;
-                cheatInfiniteLife = false;
-            }
-            Assert.AreEqual(true, cheatGameSpeed);
-            cheatCode = "REALGAME";
-
-            if (cheatCode == "SPEEDGOD")
-                cheatGameSpeed = true;
-            //GODMODE makes the pacman never decrease in current number of life
-            //In another word it means infinite life
-            else if (cheatCode == "GODMODE")
-                cheatInfiniteLife = true;
-            //REALGAME cancel the cheat code
-            else if (cheatCode == "REALGAME")
-            {
-                cheatGameSpeed = false;
-                cheatInfiniteLife = false;
-            }
-            Assert.AreEqual(false, cheatGameSpeed);
+            Form1 form = new Form1();
+            form.checkcheat("SPEEDGOD");
+            Assert.AreEqual(true, form.cheatGameSpeed);
+            form.checkcheat("GODMODE");
+            Assert.AreEqual(true, form.cheatInfiniteLife);
+            form.checkcheat("REALGAME");
+            Assert.AreEqual(false, form.cheatGameSpeed);
+            Assert.AreEqual(false, form.cheatInfiniteLife);
 
         }
 

@@ -417,7 +417,22 @@ namespace Pacman_Zagorschi_Franco
             label142.Text = "1. Yeat(100078269)";
             label253.Text = "2.Chung Long(101227936)";
         }
-
+        public void checkcheat(string code)
+        {
+            //SPEEDGOD makes the game faster
+            if (code == "SPEEDGOD")
+                cheatGameSpeed = true;
+            //GODMODE makes the pacman never decrease in current number of life
+            //In another word it means infinite life
+            else if (code == "GODMODE")
+                cheatInfiniteLife = true;
+            //REALGAME cancel the cheat code
+            else if (code == "REALGAME")
+            {
+                cheatGameSpeed = false;
+                cheatInfiniteLife = false;
+            }
+        }
         public string ShowDialog(string text, string caption)
         {
             Form prompt = new Form()
